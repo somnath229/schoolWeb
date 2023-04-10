@@ -375,32 +375,7 @@ export default function Home() {
         </Container>
       </Box>
 
-      {/* <Box
-        sx={{
-          position: "relative",
-          width: "100%",
-          height: "100%",
-        }}
-        disabled
-      >
-        
-        <iframe
-          width="100%"
-          height="100%"
-          src={`https://www.youtube.com/embed/qtTe2M5nqQg?controls=0&rel=0&playsinline=1&enablejsapi=1&origin=https%3A%2F%2Fwww.shalominternationalschool.com&widgetid=1?modestbranding=1`}
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-          sx={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            pointerEvents: "none",
-          }}
-        />
-      </Box> */}
+      
       <Cont2
         sx={{
           display: "flex",
