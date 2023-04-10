@@ -50,13 +50,14 @@
   content: "";
   background: url(http://www.shalominternationalschool.com/wp-content/uploads/2022/08/shalom-school-building.jpg);
   background-position: center center;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: auto;
   position: absolute;
   top: 0;
   right: 10%;
-  width: 70%;
+  width: 80%;
   height: 100%;
+  padding: 1rem;
   z-index: -1;
 }
 .foot {
@@ -77,4 +78,23 @@
   100% {
     opacity: 1;
   }
+}
+.vission::before {
+  content: "";
+  background: url(https://www.shalominternationalschool.com/wp-content/uploads/2022/10/benjamin-davies-287077-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+  opacity: 1;
+  filter: brightness(0.5);
+  top: 0;
+  left: 0px;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.vission {
+  position: relative;
 }

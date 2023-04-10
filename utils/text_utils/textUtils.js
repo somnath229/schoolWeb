@@ -122,3 +122,11 @@ const foot = {
   Insta: "Instagram",
 };
 export { foot };
+
+const VisionEthos = {
+  Vision_and_Ethos : "Vision and Ethos",
+  values_and_objectives : "values and objectives",
+  Education_at_Shalom_International_School_is_about_self_confidence: "Education at Shalom International School is about self confidence, challenge and enjoyment. It teaches the importance of constructive questioning and a sense of responsibility with compassion, confidence and creativity."
+
+};
+export { VisionEthos };
