@@ -9,7 +9,7 @@ import { header } from "../utils/text_utils/textUtils";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 
-const Heade = styled("Container")(({ theme }) => ({
+const ContainerWrapperHead = styled("Container")(({ theme }) => ({
   padding: theme.spacing(1),
   [theme.breakpoints.down("md")]: {
     width: "100%",
@@ -30,13 +30,13 @@ const Image = styled("img")`
   height: auto;
 `;
 
-const HeadeI = styled("Box")(({ theme }) => ({
+const HeadeImage = styled("Box")(({ theme }) => ({
   padding: theme.spacing(1),
   [theme.breakpoints.down("md")]: {
     width: "auto",
   },
 }));
-const HeadeD = styled("Box")(({ theme }) => ({
+const HeadeDetailsWrapper = styled("Box")(({ theme }) => ({
   padding: theme.spacing(1),
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
@@ -54,7 +54,7 @@ const HeadeD = styled("Box")(({ theme }) => ({
 
 const Header = () => {
   return (
-    <Heade
+    <ContainerWrapperHead
       sx={{
         display: "flex",
         alignItems: "center",
@@ -64,12 +64,12 @@ const Header = () => {
         textAlign: "justify",
       }}
     >
-      <HeadeI
+      <HeadeImage
         className="logoM"
         sx={{ width: "15%", padding: ".5rem", margin: "0 1rem" }}
       >
         <Image src="/logo1.png" alt="loading..." />
-      </HeadeI>
+      </HeadeImage>
       <Container
         sx={{
           display: "flex",
@@ -90,7 +90,7 @@ const Header = () => {
             margin: "0",
           }}
         >
-          {header.heading}
+          {header.Shalom_International_School_Jr_College}
         </Typography>
         <Typography
           variant="caption"
@@ -98,9 +98,9 @@ const Header = () => {
           gutterBottom
           sx={{ textAlign: "center", fontSize: "15px", marginBottom: "1rem" }}
         >
-          {header.desc}
+          {header.English_Medium_Co_ed_School}
         </Typography>
-        <HeadeD
+        <HeadeDetailsWrapper
           sx={{
             display: "flex",
             alignItems: "center",
@@ -140,7 +140,7 @@ const Header = () => {
                 fontSize: "18px ",
               }}
             >
-              {header.no}
+              {header.number}
             </Box>
           </Box>
           <Box
@@ -157,12 +157,12 @@ const Header = () => {
                 fontSize: "18px ",
               }}
             >
-              {header.add}
+              {header.address}
             </Box>
           </Box>
-        </HeadeD>
+        </HeadeDetailsWrapper>
       </Container>
-    </Heade>
+    </ContainerWrapperHead>
   );
 };
 

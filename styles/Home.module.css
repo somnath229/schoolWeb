@@ -1,36 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
-.text{
-  font-family: 'UnifrakturCook', cursive;
-  color: #720404F2;
+@import url("https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap");
+.text {
+  font-family: "UnifrakturCook", cursive;
+  color: #720404f2;
   font-size: 3rem;
 }
-.navi{
+.navi {
   display: flex;
 }
-.naviN{
+.naviN {
   display: none;
 }
 .main::before {
-  content: '';
+  content: "";
   background: url(http://www.shalominternationalschool.com/wp-content/uploads/2022/10/about.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
   background-attachment: fixed;
-  opacity: .8;
+  opacity: 0.8;
   top: 0;
   left: 0px;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   z-index: -1;
-  
 }
-.main{
+.main {
   position: relative;
 }
 .main2::before {
-  content: '';
+  content: "";
   background: url(https://www.shalominternationalschool.com/wp-content/uploads/2022/08/sports.png);
   background-position: center center;
   background-repeat: repeat;
@@ -43,13 +42,13 @@
   height: 100%;
   z-index: -1;
 }
-.main2{
+.main2 {
   position: relative;
 }
 
 .foot::before {
-  content: '';
-  background:url(http://www.shalominternationalschool.com/wp-content/uploads/2022/08/shalom-school-building.jpg);
+  content: "";
+  background: url(http://www.shalominternationalschool.com/wp-content/uploads/2022/08/shalom-school-building.jpg);
   background-position: center center;
   background-repeat: repeat;
   background-size: auto;
@@ -60,6 +59,22 @@
   height: 100%;
   z-index: -1;
 }
-.foot{
+.foot {
   position: relative;
+}
+
+.animated {
+  animation: fadeIn 5s;
+}
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

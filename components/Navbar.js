@@ -9,18 +9,17 @@ import { styled } from "@mui/material/styles";
 import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Menu from "@mui/material/Menu";
-import styles from "@/styles/Home.module.css";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 
 const Root = styled("Box")(({ theme }) => ({
   padding: theme.spacing(1),
   [theme.breakpoints.down("md")]: {
-    display:"none",
+    display: "none",
     backgroundColor: "white",
     flexDirection: "column",
     alignItems: "flex-start",
     padding: "0",
-    position: "absolute"
+    position: "absolute",
   },
   [theme.breakpoints.up("md")]: {
     display: "none",
@@ -58,17 +57,6 @@ const Ham = styled("Box")(({ theme }) => ({
     display: "none",
   },
 }));
-// const MenuM = styled("Menu")(({ theme }) => ({
-//   [theme.breakpoints.down("md")]: {
-//     width:"55%",
-//   },
-//   [theme.breakpoints.up("md")]: {
-//     width:"55%",
-//   },
-//   [theme.breakpoints.up("lg")]: {
-//     width: "12%",
-//   },
-// }));
 
 function Navbar() {
   function navi() {
@@ -85,11 +73,15 @@ function Navbar() {
     navi();
     setHamI(!hamI);
   };
- 
+
   return (
     <Box>
       <Ham>
-      {hamI?<MenuIcon onClick={handleClick1} />: <CloseIcon onClick={handleClick1}/>}
+        {hamI ? (
+          <MenuIcon onClick={handleClick1} />
+        ) : (
+          <CloseIcon onClick={handleClick1} />
+        )}
       </Ham>
 
       <Root
@@ -100,24 +92,30 @@ function Navbar() {
           padding: "0.8rem",
           cursor: "pointer",
           margin: "auto",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          
         }}
       >
-        <ListItem sx={{ width: "4%" }}>
+        <ListItem sx={{ width: "auto", padding: "15px 0", fontSize: "16px",
+          fontWeight: "600", }}>
           <ListItemText primary={navbar.Home} />
         </ListItem>
-        <ListItem sx={{ width: "7%" }}>
+        <ListItem sx={{ width: "auto" }}>
           <ListItemText
             primary={navbar.VisionMission}
             sx={{ whiteSpace: "nowrap" }}
           />
         </ListItem>
-        <ListItem sx={{ width: "5%" }}>
+        <ListItem sx={{ width: "auto" }}>
           <ListItemText primary={navbar.About} sx={{ whiteSpace: "nowrap" }} />
         </ListItem>
-        <ListItem sx={{ width: "5%" }}>
+        <ListItem sx={{ width: "auto" }}>
           <ListItemText primary={navbar.Facilities} />
         </ListItem>
-        <ListItem sx={{ width: "6%" }}>
+        <ListItem sx={{ width: "auto" }}>
           <ListItemText primary={navbar.Management} />
         </ListItem>
         <PopupState variant="popover" popupId="demo-popup-menu">
@@ -126,7 +124,7 @@ function Navbar() {
               <ListItem
                 variant="contained"
                 {...bindTrigger(popupState)}
-                sx={{ width: "7%" }}
+                sx={{ width: "auto" }}
               >
                 <ListItemText
                   primary={navbar.ForParents}
@@ -150,13 +148,13 @@ function Navbar() {
                   onClick={popupState.close}
                   sx={{ padding: ".5rem 1rem" }}
                 >
-                  {navbar.ThingsToB}
+                  {navbar.ThingsToBring}
                 </MenuItem>
                 <MenuItem
                   onClick={popupState.close}
                   sx={{ padding: ".5rem 1rem" }}
                 >
-                  {navbar.ParentD}
+                  {navbar.ParentDeclaration}
                 </MenuItem>
               </Menu>
             </React.Fragment>
@@ -168,7 +166,7 @@ function Navbar() {
               <ListItem
                 variant="contained"
                 {...bindTrigger(popupState)}
-                sx={{ width: "8%" }}
+                sx={{ width: "auto" }}
               >
                 <ListItemText
                   primary={navbar.NewsEvents}
@@ -179,32 +177,34 @@ function Navbar() {
               <Menu
                 {...bindMenu(popupState)}
                 sx={{ width: "12%", background: "none", marginTop: ".7rem" }}
-              >                <MenuItem
+              >
+                {" "}
+                <MenuItem
                   onClick={popupState.close}
                   sx={{ padding: ".5rem 1rem" }}
                 >
-                  {navbar.Anounc}
+                  {navbar.Announcements}
                 </MenuItem>
                 <MenuItem
                   onClick={popupState.close}
                   sx={{ padding: ".5rem 1rem" }}
                 >
-                  {navbar.SchoolEv}
+                  {navbar.SchoolEvents}
                 </MenuItem>
                 <MenuItem
                   onClick={popupState.close}
                   sx={{ padding: ".5rem 1rem" }}
                 >
-                  {navbar.ExamR}
+                  {navbar.ExamResults}
                 </MenuItem>
               </Menu>
             </React.Fragment>
           )}
         </PopupState>
-        <ListItem sx={{ width: "5%" }}>
+        <ListItem sx={{ width: "auto" }}>
           <ListItemText primary={navbar.Admission} />
         </ListItem>
-        <ListItem sx={{ width: "5%" }}>
+        <ListItem sx={{ width: "auto" }}>
           <ListItemText primary={navbar.Contact} />
         </ListItem>
       </Root>
