@@ -1,10 +1,10 @@
 import * as React from "react";
 import Head from "next/head";
-import AdmissionBg from "../components/Main_components/AdmissionBg";
-import BelowAdmissionBg from "../components/Main_components/BelowAdmissionBg";
-import WhyComponents from "../components/Main_components/WhyComponents";
-import Moto from "../components/Main_components/Moto";
-import BelowMoto from "../components/Main_components/BelowMoto";
+import AdmissionBg from "../components/MainComponents/AdmissionBg";
+import BelowAdmissionBg from "../components/MainComponents/BelowAdmissionBg";
+import WhyComponents from "../components/MainComponents/WhyComponents";
+import Moto from "../components/MainComponents/Moto";
+import BelowMoto from "../components/MainComponents/BelowMoto";
 
 export default function Home() {
   return (

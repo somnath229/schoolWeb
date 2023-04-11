@@ -10,7 +10,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Menu from "@mui/material/Menu";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
-import Link from 'next/link'
+import Link from "next/link";
 
 const Root = styled("Box")(({ theme }) => ({
   padding: theme.spacing(1),
@@ -97,27 +97,41 @@ function Navbar() {
           alignItems: "center",
           justifyContent: "center",
           flexWrap: "wrap",
-          
         }}
       >
-        <ListItem sx={{ width: "auto", padding: "15px 0", fontSize: "16px",
-          fontWeight: "600", }}>
-          <Link href="/"><ListItemText primary={navbar.Home} sx = {{ color:"white" }} /></Link>
+        <ListItem
+          sx={{
+            width: "auto",
+            padding: "15px 0",
+            fontSize: "16px",
+            fontWeight: "600",
+          }}
+        >
+          <Link href="/">
+            <ListItemText primary={navbar.Home} sx={{ color: "white" }} />
+          </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-        <Link href="/vision-mission"><ListItemText
-            primary={navbar.VisionMission}
-            sx={{ whiteSpace: "nowrap", color:"white" }}
-          /></Link>
+          <Link href="/vision-mission">
+            <ListItemText
+              primary={navbar.VisionMission}
+              sx={{ whiteSpace: "nowrap", color: "white" }}
+            />
+          </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <ListItemText primary={navbar.About} sx={{ whiteSpace: "nowrap" }} />
+          <Link href="/about-us">
+            <ListItemText
+              primary={navbar.About}
+              sx={{ whiteSpace: "nowrap", color: "white"  }}
+            />
+          </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
           <ListItemText primary={navbar.Facilities} />
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-        <ListItemText primary={navbar.Management} />
+          <ListItemText primary={navbar.Management} />
         </ListItem>
         <PopupState variant="popover" popupId="demo-popup-menu">
           {(popupState) => (
