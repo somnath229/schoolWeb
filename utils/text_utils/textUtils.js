@@ -167,7 +167,8 @@ const VisionMotoUtils = {
   Our_motto_is: "Our motto is “Lord is My Shepherd” .",
   We_guide_our_students:
     "We guide our students to grow in love, understanding, and practice their faith, to realize their academic potential and to be responsible citizens who are Christ-like in their service to others. We strive to develop a balanced emotional character and personality, leading to self-awareness, empathy and good social skills.",
-    We_envision_empowering :  "We envision empowering students to contently be in the pursuit of knowledge to strengthen their intellectual capacities and seeking better ways to assimilate knowledge.",
+  We_envision_empowering:
+    "We envision empowering students to contently be in the pursuit of knowledge to strengthen their intellectual capacities and seeking better ways to assimilate knowledge.",
   Our_Moto_qout: `"We believe that a successful school feels like home."`,
   Ayush_Thorat: "Ayush Thorat",
   Grade_XI: "Grade XI, Student",
@@ -175,8 +176,49 @@ const VisionMotoUtils = {
 export { VisionMotoUtils };
 
 const HelpUtils = {
-  Help_Us_Improve : "Help Us Improve",
-  Your_valuable : "Your valuable suggestions and feedback matter.",
-  If_you_have_a_suggestion : "If you have a suggestion, please let us know."
+  Help_Us_Improve: "Help Us Improve",
+  Your_valuable: "Your valuable suggestions and feedback matter.",
+  If_you_have_a_suggestion: "If you have a suggestion, please let us know.",
 };
 export { HelpUtils };
+
+const AboutUsUtils = {
+  About_Us: "About Us",
+  Learn_more_about_our_school: "Learn more about our school",
+};
+export { AboutUsUtils };
+
+const AffiliationCurriculumUtils = {
+  Affiliation: "Affiliation, Curriculum and School Calendar",
+  The_School_follows:
+    "The School follows the syllabus prescribed by the Indian Council of Secondary Education, New Delhi (ICSE Board) and Maharashtra State Board of Secondary and Higher Secondary Education (S.S.C. & H.S.C Board) and prepares its pupils from Kindergarten to the Secondary School Examination (SSC) X & Higher Secondary Examination.",
+  Our_Jr_College:
+    "Our Jr. College (H.S.C) XI and XII (Science and Commerce) follows the Syllabus laid down by the Government of Maharashtra. The School is also a member or the Indian Public Schools Conference. Curriculum The general course of studies(I to X) includes: English, Mathematics, Hindi, Marathi, History, Geography, Physics, Chemistry, Biology, Computer applications, Commercial Application, Moral Science, Art, G.K., SUPW etc and for XI & XII Science/Commerce includes Physics, Chemistry, Biology, Maths, I.T., English Hindi, French & Gujrati, Eco, A/c & B.K. , S.P., O.C.",
+};
+export { AffiliationCurriculumUtils };
+
+const AboutCardsUtils = {
+  School_Sessions: "School Sessions",
+  One_academic_year_consists_of_thr_terms:
+    "One academic year consists of three terms.",
+  First_term: "First term – June to August",
+  Second_term: "Second term: September to November",
+  Third_term: "Third term: January to April",
+  All_students:
+    "All students are expected to go home during long vacations. The School fixtures will be strictly follows.",
+  Cocurricular:
+    "Co-Curricular activities are an integral part of the training given in school. They include Dramatics, Debating, Elocution, Eisteddfod, Dancing, Drawing, Painting, Art & craft, Quiz & Olympiads.",
+  Academic_Activities:  "Academic Activities",
+  Co_Curricular_Activities:"Co-Curricular Activities",
+  The_School_provides:"The School provides a number of co-Curricular activities under the guidance and supervision of trained staff.",
+  Indoor_outdoor_games:"Indoor & outdoor games",
+  The_School_has_facilities : "The School has facilities for professional Coaching in football, Cricket, Volleyball, Athletics, Gymnastics & Skating.Games are an integral part of the school curriculum. No student will be exempted from games.",
+  Field_and_Track_Events: "Field and Track Events",
+  Games_are_an_integral:"Games are an integral part of the school curriculum. No student will be exempted from games.",
+  Table_Tennis:"Table Tennis, Badminton, Chess, Carrom & pool. These are generally played during the monsoon season.",
+  Cricket:"Cricket, Football, Volleyball, Basketball, Skating, Swimming & Athletics etc.",
+  Science:"Science & IT Labs",
+  To_enable_child: "To enable child to pace with the ever growing world of technology , the school has a well organized computer laboratory with internet connection, each child is provided a separate computer to work on it",
+  We_offer_cutting_edge: "We offer cutting edge training at the Junior College level with balanced preparation for various entrance exams. The campus facilities and best guidance of qualified professionals provide a unique environment for competitive learning."
+};
+export { AboutCardsUtils };
