@@ -222,3 +222,26 @@ const AboutCardsUtils = {
   We_offer_cutting_edge: "We offer cutting edge training at the Junior College level with balanced preparation for various entrance exams. The campus facilities and best guidance of qualified professionals provide a unique environment for competitive learning."
 };
 export { AboutCardsUtils };
+
+
+const FacilitytextUtils = {
+  FACILITIES_OFFERED:"FACILITIES OFFERED",
+  Co_Curricular_activities: "Co-Curricular activities are an integral part of the training given in school. They include Dramatics, Debating, Elocution, Eisteddfod, Dancing, Drawing, Painting,  Art & craft, Quiz &  Olympiads."
+};
+export {FacilitytextUtils};
+
+const FacilityCardtextUtils = {
+  Biology : "Biology",
+  Laced_with_modern : "Laced with modern amenities two separate but twin hostel buildings for girls and boys enhance the beauty of the campus.",
+  Games_Sports : "Games & Sports",
+  To_help_children : "To help children build healthy and good physique, well-equipped gymnasium plays a vital role in build muscles and developing strong bones. Riding and Skating have now been recently introduced much to the delight of the students.",
+  Library_Laboratories : "Library & Laboratories",
+  To_promote_the_reading:"To promote the reading skill of the child and to make him up to date with latest knowledge, the school has a rich collection of books on all subjects and for all levels of children.",
+  Infirmary:"Infirmary",
+  A_well_trained_staff:"A well trained staff nurse is made available in the school premises for 24 hours to ensure the health and well being of pupils, emergencies are treated at the hospitals at Wai, medicines prescribed by the doctors are given to the child by Matron/ Hostel in-charge only.",
+  Food_Dining:"Food & Dining",
+  A_sound_mind_dwells :"A sound mind dwells in the sound body. To ensure the sound body and physical growth of the child a well balanced nutritious, wholesome, tasty, and homely food is served in all the meals.",
+  Information_Technology:"Information Technology",
+  To_enable_child_to_pace_with:"To enable child to pace with the ever growing world of technology , the school has a well organized computer laboratory with internet connection, each child is provided a separate computer to work on it."
+}
+export {FacilityCardtextUtils}

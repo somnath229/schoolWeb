@@ -145,3 +145,23 @@
   border-radius: 50%;
   display: inline-block;
 }
+
+.facilitiesBgDesigne::before {
+  content: "";
+  background: url(https://www.shalominternationalschool.com/wp-content/uploads/2022/12/mikael-kristenson-242070-unsplash_2500.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+  opacity: 1;
+  filter: brightness(0.5);
+  top: 0;
+  left: 0px;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.facilitiesBgDesigne {
+  position: relative;
+}
