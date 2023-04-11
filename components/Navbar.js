@@ -123,12 +123,17 @@ function Navbar() {
           <Link href="/about-us">
             <ListItemText
               primary={navbar.About}
-              sx={{ whiteSpace: "nowrap", color: "white"  }}
+              sx={{ whiteSpace: "nowrap", color: "white" }}
             />
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <ListItemText primary={navbar.Facilities} />
+          <Link href="/facilities">
+            <ListItemText
+              primary={navbar.Facilities}
+              sx={{ whiteSpace: "nowrap", color: "white" }}
+            />
+          </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
           <ListItemText primary={navbar.Management} />
