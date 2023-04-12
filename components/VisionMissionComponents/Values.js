@@ -12,7 +12,7 @@ const ContainerWrapper = styled("Container")(({ theme }) => ({
   },
   [theme.breakpoints.up("md")]: {
     flexDirection: "column",
-  },
+  }, 
   [theme.breakpoints.up("lg")]: {
     flexDirection: "row",
   },
