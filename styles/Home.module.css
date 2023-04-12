@@ -165,3 +165,43 @@
 .facilitiesBgDesigne {
   position: relative;
 }
+
+.contactBgDesigne::before {
+  content: "";
+  background: url(https://www.shalominternationalschool.com/wp-content/uploads/2022/10/rawpixel-804732-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+  opacity: 1;
+  filter: brightness(0.5);
+  top: 0;
+  left: 0px;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.contactBgDesigne {
+  position: relative;
+}
+
+.send::before {
+  content: "";
+  background: url(https://www.shalominternationalschool.com/wp-content/uploads/2022/10/rawpixel-778690-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  background-attachment: fixed;
+  opacity: 1;
+  filter: brightness(0.5);
+  top: 0;
+  left: 0px;
+  width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.send {
+  position: relative;
+}

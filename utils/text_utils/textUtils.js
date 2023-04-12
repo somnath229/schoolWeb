@@ -208,65 +208,111 @@ const AboutCardsUtils = {
     "All students are expected to go home during long vacations. The School fixtures will be strictly follows.",
   Cocurricular:
     "Co-Curricular activities are an integral part of the training given in school. They include Dramatics, Debating, Elocution, Eisteddfod, Dancing, Drawing, Painting, Art & craft, Quiz & Olympiads.",
-  Academic_Activities:  "Academic Activities",
-  Co_Curricular_Activities:"Co-Curricular Activities",
-  The_School_provides:"The School provides a number of co-Curricular activities under the guidance and supervision of trained staff.",
-  Indoor_outdoor_games:"Indoor & outdoor games",
-  The_School_has_facilities : "The School has facilities for professional Coaching in football, Cricket, Volleyball, Athletics, Gymnastics & Skating.Games are an integral part of the school curriculum. No student will be exempted from games.",
+  Academic_Activities: "Academic Activities",
+  Co_Curricular_Activities: "Co-Curricular Activities",
+  The_School_provides:
+    "The School provides a number of co-Curricular activities under the guidance and supervision of trained staff.",
+  Indoor_outdoor_games: "Indoor & outdoor games",
+  The_School_has_facilities:
+    "The School has facilities for professional Coaching in football, Cricket, Volleyball, Athletics, Gymnastics & Skating.Games are an integral part of the school curriculum. No student will be exempted from games.",
   Field_and_Track_Events: "Field and Track Events",
-  Games_are_an_integral:"Games are an integral part of the school curriculum. No student will be exempted from games.",
-  Table_Tennis:"Table Tennis, Badminton, Chess, Carrom & pool. These are generally played during the monsoon season.",
-  Cricket:"Cricket, Football, Volleyball, Basketball, Skating, Swimming & Athletics etc.",
-  Science:"Science & IT Labs",
-  To_enable_child: "To enable child to pace with the ever growing world of technology , the school has a well organized computer laboratory with internet connection, each child is provided a separate computer to work on it",
-  We_offer_cutting_edge: "We offer cutting edge training at the Junior College level with balanced preparation for various entrance exams. The campus facilities and best guidance of qualified professionals provide a unique environment for competitive learning."
+  Games_are_an_integral:
+    "Games are an integral part of the school curriculum. No student will be exempted from games.",
+  Table_Tennis:
+    "Table Tennis, Badminton, Chess, Carrom & pool. These are generally played during the monsoon season.",
+  Cricket:
+    "Cricket, Football, Volleyball, Basketball, Skating, Swimming & Athletics etc.",
+  Science: "Science & IT Labs",
+  To_enable_child:
+    "To enable child to pace with the ever growing world of technology , the school has a well organized computer laboratory with internet connection, each child is provided a separate computer to work on it",
+  We_offer_cutting_edge:
+    "We offer cutting edge training at the Junior College level with balanced preparation for various entrance exams. The campus facilities and best guidance of qualified professionals provide a unique environment for competitive learning.",
 };
 export { AboutCardsUtils };
 
-
 const FacilitytextUtils = {
-  FACILITIES_OFFERED:"FACILITIES OFFERED",
-  Co_Curricular_activities: "Co-Curricular activities are an integral part of the training given in school. They include Dramatics, Debating, Elocution, Eisteddfod, Dancing, Drawing, Painting,  Art & craft, Quiz &  Olympiads."
+  FACILITIES_OFFERED: "FACILITIES OFFERED",
+  Co_Curricular_activities:
+    "Co-Curricular activities are an integral part of the training given in school. They include Dramatics, Debating, Elocution, Eisteddfod, Dancing, Drawing, Painting,  Art & craft, Quiz &  Olympiads.",
 };
-export {FacilitytextUtils};
+export { FacilitytextUtils };
 
 const FacilityCardtextUtils = {
-  Biology : "Biology",
-  Laced_with_modern : "Laced with modern amenities two separate but twin hostel buildings for girls and boys enhance the beauty of the campus.",
-  Games_Sports : "Games & Sports",
-  To_help_children : "To help children build healthy and good physique, well-equipped gymnasium plays a vital role in build muscles and developing strong bones. Riding and Skating have now been recently introduced much to the delight of the students.",
-  Library_Laboratories : "Library & Laboratories",
-  To_promote_the_reading:"To promote the reading skill of the child and to make him up to date with latest knowledge, the school has a rich collection of books on all subjects and for all levels of children.",
-  Infirmary:"Infirmary",
-  A_well_trained_staff:"A well trained staff nurse is made available in the school premises for 24 hours to ensure the health and well being of pupils, emergencies are treated at the hospitals at Wai, medicines prescribed by the doctors are given to the child by Matron/ Hostel in-charge only.",
-  Food_Dining:"Food & Dining",
-  A_sound_mind_dwells :"A sound mind dwells in the sound body. To ensure the sound body and physical growth of the child a well balanced nutritious, wholesome, tasty, and homely food is served in all the meals.",
-  Information_Technology:"Information Technology",
-  To_enable_child_to_pace_with:"To enable child to pace with the ever growing world of technology , the school has a well organized computer laboratory with internet connection, each child is provided a separate computer to work on it."
-}
-export {FacilityCardtextUtils}
+  Biology: "Biology",
+  Laced_with_modern:
+    "Laced with modern amenities two separate but twin hostel buildings for girls and boys enhance the beauty of the campus.",
+  Games_Sports: "Games & Sports",
+  To_help_children:
+    "To help children build healthy and good physique, well-equipped gymnasium plays a vital role in build muscles and developing strong bones. Riding and Skating have now been recently introduced much to the delight of the students.",
+  Library_Laboratories: "Library & Laboratories",
+  To_promote_the_reading:
+    "To promote the reading skill of the child and to make him up to date with latest knowledge, the school has a rich collection of books on all subjects and for all levels of children.",
+  Infirmary: "Infirmary",
+  A_well_trained_staff:
+    "A well trained staff nurse is made available in the school premises for 24 hours to ensure the health and well being of pupils, emergencies are treated at the hospitals at Wai, medicines prescribed by the doctors are given to the child by Matron/ Hostel in-charge only.",
+  Food_Dining: "Food & Dining",
+  A_sound_mind_dwells:
+    "A sound mind dwells in the sound body. To ensure the sound body and physical growth of the child a well balanced nutritious, wholesome, tasty, and homely food is served in all the meals.",
+  Information_Technology: "Information Technology",
+  To_enable_child_to_pace_with:
+    "To enable child to pace with the ever growing world of technology , the school has a well organized computer laboratory with internet connection, each child is provided a separate computer to work on it.",
+};
+export { FacilityCardtextUtils };
 
 const FromAdmissionUtils = {
-  Admission_Form : "Admission Form",
-  Shalom_International:"Shalom International School & Jr. College, Panchgani",
+  Admission_Form: "Admission Form",
+  Shalom_International: "Shalom International School & Jr. College, Panchgani",
   Email: "Email",
-  Your_Name_and_relation_with_the_child: "Your Name and relation with the child:",
+  Your_Name_and_relation_with_the_child:
+    "Your Name and relation with the child:",
   Students_Full_Name: "Student's Full Name:",
   Parents_Contact_number: "Parent's Contact number:",
   Class_in_which_admission_is_sought: "Class in which admission is sought?",
-  SubmitForm: "Submit Form"
+  SubmitForm: "Submit",
 };
-export {FromAdmissionUtils};
+export { FromAdmissionUtils };
 
 const ManagementCardUtils = {
-  MANAGEMENT:"MANAGEMENT",
+  MANAGEMENT: "MANAGEMENT",
   Sahebrao_Shivram_Biramane: "Founder: Mr. Sahebrao Shivram Biramane",
-  Sahebrao_Shivram_Biramane_ExPresident: "Ex-President: Panchgani Municipal Corporation.",
-  Sahebrao_Shivram_Biramane_Founder: "Founder: Saikrupa Charitable Trust & Saikrupa Education Foundation.A well known philanthropist who runs many charitable institutions and schools for the downtrodden part of society.",
+  Sahebrao_Shivram_Biramane_ExPresident:
+    "Ex-President: Panchgani Municipal Corporation.",
+  Sahebrao_Shivram_Biramane_Founder:
+    "Founder: Saikrupa Charitable Trust & Saikrupa Education Foundation.A well known philanthropist who runs many charitable institutions and schools for the downtrodden part of society.",
   Ajit_Biramane: "Chairman: Mr.Ajit Biramane",
-  His_management_style:"His management style is very dialogue oriented and result driven. His progressive thoughts have helped the Institution to upgrade the school infrastructure in recent years. He is committed to excellence in a child’s academics as well as sports. Under his dynamic chairmanship school will continue to achieve more.",
+  His_management_style:
+    "His management style is very dialogue oriented and result driven. His progressive thoughts have helped the Institution to upgrade the school infrastructure in recent years. He is committed to excellence in a child’s academics as well as sports. Under his dynamic chairmanship school will continue to achieve more.",
   Shweta_Ajit_Biramane: "Administrator: Mrs. Shweta Ajit Biramane",
-  The_caring_and_loving:"The caring and loving nature of administrator makes a foundational difference in the the lives of our children.",
-  Children_experience_compassion: "Children experience compassion & endearment in the form of Mrs. Shweta Biramane, the Administrator and in true sense the driving force behind smooth functioning of the school."
+  The_caring_and_loving:
+    "The caring and loving nature of administrator makes a foundational difference in the the lives of our children.",
+  Children_experience_compassion:
+    "Children experience compassion & endearment in the form of Mrs. Shweta Biramane, the Administrator and in true sense the driving force behind smooth functioning of the school.",
 };
-export {ManagementCardUtils};
+export { ManagementCardUtils };
+
+const contactUsUtils = {
+  Contact_Us: "Contact Us",
+  We_love_to_hear_from_you: "We'd love to hear from you",
+  Shalom_International_School:
+    "Shalom International School welcomes you for valuable suggestions and feedback.",
+  Feel_free_to_contact:
+    "Feel free to contact us at the below mentioned addresses.",
+  Headquarters: "Headquarters",
+  Walk_into_our_office_at: "Walk into our office at:",
+  Walk_into_our_office_at_Name: "Shalom Interntional School",
+  Walk_into_our_office_at_Line1: "Chesson Road, Opp. Municipal Garden,",
+  Walk_into_our_office_at_Line2: "Panchgani 412805",
+  Walk_into_our_office_at_Line3: "Satara District, Maharashtra, India",
+  Phone_Number1: "(02168) 240506",
+  Phone_Number2: "240907 , 240681",
+  Mobile_Number: "98506 72949, 9224 40656",
+  email_Address: "enquiry@shalominternationalschool.com",
+  Send_Us_A_Message: "Send Us A Message!",
+  Fill_up_the_form: "Fill up the form, we'd love to hear from you!",
+  Your_name:"Your name",
+  Your_email:"Your email",
+  Subject:"Subject",
+  Your_message:"Your message (optional)",
+  Submit: "Submit"
+};
+export { contactUsUtils };
