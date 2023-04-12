@@ -232,7 +232,7 @@ function Navbar() {
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/management">
+          <Link href="/contact">
             <ListItemText primary={navbar.Contact} sx={{ color: "white" }} />
           </Link>
         </ListItem>
