@@ -59,7 +59,7 @@ const Card_Vision = () => {
         sx={{ margin: "1rem", width: "100%" }}
       />
     </ContainerWrapper>
-  );
+  ); 
 };
 
 export default Card_Vision;
