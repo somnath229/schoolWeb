@@ -67,7 +67,7 @@ const HelpUs = () => {
             color: "white",
             textAlign: "center",
           }}
-        >
+        > 
           {HelpUtils.If_you_have_a_suggestion}
         </Typography>
         <Box sx={{width:"50%", margin:"auto", textAlign:"center"}}>
