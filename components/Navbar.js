@@ -222,7 +222,9 @@ function Navbar() {
           )}
         </PopupState>
         <ListItem sx={{ width: "auto" }}>
-          <ListItemText primary={navbar.Admission} />
+          <Link href="/admission">
+            <ListItemText primary={navbar.Admission} sx={{color: "white" }}/>
+          </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
           <ListItemText primary={navbar.Contact} />
