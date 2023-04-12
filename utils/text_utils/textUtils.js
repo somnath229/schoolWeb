@@ -257,3 +257,16 @@ const FromAdmissionUtils = {
   SubmitForm: "Submit Form"
 };
 export {FromAdmissionUtils};
+
+const ManagementCardUtils = {
+  MANAGEMENT:"MANAGEMENT",
+  Sahebrao_Shivram_Biramane: "Founder: Mr. Sahebrao Shivram Biramane",
+  Sahebrao_Shivram_Biramane_ExPresident: "Ex-President: Panchgani Municipal Corporation.",
+  Sahebrao_Shivram_Biramane_Founder: "Founder: Saikrupa Charitable Trust & Saikrupa Education Foundation.A well known philanthropist who runs many charitable institutions and schools for the downtrodden part of society.",
+  Ajit_Biramane: "Chairman: Mr.Ajit Biramane",
+  His_management_style:"His management style is very dialogue oriented and result driven. His progressive thoughts have helped the Institution to upgrade the school infrastructure in recent years. He is committed to excellence in a child’s academics as well as sports. Under his dynamic chairmanship school will continue to achieve more.",
+  Shweta_Ajit_Biramane: "Administrator: Mrs. Shweta Ajit Biramane",
+  The_caring_and_loving:"The caring and loving nature of administrator makes a foundational difference in the the lives of our children.",
+  Children_experience_compassion: "Children experience compassion & endearment in the form of Mrs. Shweta Biramane, the Administrator and in true sense the driving force behind smooth functioning of the school."
+};
+export {ManagementCardUtils};
