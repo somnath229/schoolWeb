@@ -10,7 +10,7 @@ const getCommonHeaders = () => {
   headers["X_APPID"] = "1";
   headers["X_APPVERSION"] = "1.0.0";
   headers["X_DEVICEID"] = "1";
-  headers["X_DEVICEOS"] = "web";
+  headers["X_DEVICEOS"] = "web"; 
   headers["X_APIKEY"] = "";
   return headers;
 };
