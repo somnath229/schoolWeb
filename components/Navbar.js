@@ -136,7 +136,12 @@ function Navbar() {
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <ListItemText primary={navbar.Management} />
+          <Link href="/management">
+            <ListItemText
+              primary={navbar.Management}
+              sx={{ whiteSpace: "nowrap", color: "white" }}
+            />
+          </Link>
         </ListItem>
         <PopupState variant="popover" popupId="demo-popup-menu">
           {(popupState) => (
@@ -223,11 +228,13 @@ function Navbar() {
         </PopupState>
         <ListItem sx={{ width: "auto" }}>
           <Link href="/admission">
-            <ListItemText primary={navbar.Admission} sx={{color: "white" }}/>
+            <ListItemText primary={navbar.Admission} sx={{ color: "white" }} />
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <ListItemText primary={navbar.Contact} />
+          <Link href="/management">
+            <ListItemText primary={navbar.Contact} sx={{ color: "white" }} />
+          </Link>
         </ListItem>
       </Root>
     </Box>
