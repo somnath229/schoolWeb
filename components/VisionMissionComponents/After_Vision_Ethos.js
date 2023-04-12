@@ -10,12 +10,12 @@ import { styled } from "@mui/material/styles";
 //         width:"100%",
 //     },
 //     [theme.breakpoints.up("md")]: {
-//         width:"75%",
+//         width:"75%", 
 //     },
 //     [theme.breakpoints.up("lg")]: {
 //         width:"75%",
 //     },
-//   }));
+//   }));  
 const After_Vision_Ethos = () => {
   return (
     <Container maxWidth="lg" sx = {{padding:"2rem"}}>
