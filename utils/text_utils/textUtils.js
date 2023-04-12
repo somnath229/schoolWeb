@@ -245,3 +245,15 @@ const FacilityCardtextUtils = {
   To_enable_child_to_pace_with:"To enable child to pace with the ever growing world of technology , the school has a well organized computer laboratory with internet connection, each child is provided a separate computer to work on it."
 }
 export {FacilityCardtextUtils}
+
+const FromAdmissionUtils = {
+  Admission_Form : "Admission Form",
+  Shalom_International:"Shalom International School & Jr. College, Panchgani",
+  Email: "Email",
+  Your_Name_and_relation_with_the_child: "Your Name and relation with the child:",
+  Students_Full_Name: "Student's Full Name:",
+  Parents_Contact_number: "Parent's Contact number:",
+  Class_in_which_admission_is_sought: "Class in which admission is sought?",
+  SubmitForm: "Submit Form"
+};
+export {FromAdmissionUtils};
