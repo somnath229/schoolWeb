@@ -7,7 +7,7 @@ import { styled } from "@mui/material/styles";
 
 const AboutUs = () => {
   return (
-    <Box maxWidth="false" className={styles.main}>
+    <Box className={styles.main}>
       <Box
         sx={{
           display: "flex",
@@ -34,7 +34,7 @@ const AboutUs = () => {
             lineHeight: ".8em",
             letterSpacing: "-0.15px",
             padding:"0 2rem",
-          }}
+          }} 
         >
           {AboutUsUtils.About_Us}
         </Typography>
@@ -43,7 +43,7 @@ const AboutUs = () => {
           gutterBottom
           sx={{
             fontWeight: "300",
-            fontSize: "20px",
+            fontSize: "18px",
             lineHeight: "1em",
             letterSpacing: "-0.15px",
             padding:"0 2rem",
