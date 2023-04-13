@@ -5,11 +5,30 @@ import { FromAdmissionUtils } from "../../utils/text_utils/textUtils";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import { submitFormApi } from "@/utils/api/Api";
 
 const AdmissionForm = () => {
+  const [userFormData, setUserFormData] = React.useState({
+    email: "",
+    name: "",
+    student_name: "",
+    phone: "",
+    class: "",
+  });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      let response = await submitFormApi({
+        ...userFormData,
+        source: "admission_page",
+      });
+    } catch (error) {}
+  };
+  const handleChange = (e) => {
+    setUserFormData({ ...userFormData, [e.target.name]: e.target.value });
+  };
   return (
     <Box
-      component="form"
       sx={{
         padding: "4rem",
         "& .MuiTextField-root": { m: 1, width: "100%" },
@@ -26,6 +45,8 @@ const AdmissionForm = () => {
           justifyContent: "center",
           width: "100%",
         }}
+        component={"form"}
+        onSubmit={handleSubmit}
       >
         <Box sx={{ width: "100%", maxWidth: 500 }}>
           <Typography
@@ -36,7 +57,7 @@ const AdmissionForm = () => {
               fontWeight: "700",
               lineHeight: "1em",
               letterSpacing: "-0.15px",
-              textAlign:"center"
+              textAlign: "center",
             }}
           >
             {FromAdmissionUtils.Admission_Form}
@@ -50,7 +71,7 @@ const AdmissionForm = () => {
               lineHeight: "1em",
               letterSpacing: "0.15px",
               marginBottom: "4rem",
-              textAlign:"center"
+              textAlign: "center",
             }}
           >
             {FromAdmissionUtils.Shalom_International}
@@ -60,29 +81,46 @@ const AdmissionForm = () => {
           required
           id="outlined-required"
           label={FromAdmissionUtils.Email}
+          name="email"
+          value={userFormData.email}
+          onChange={handleChange}
         />
         <TextField
           required
           id="outlined-required"
           label={FromAdmissionUtils.Your_Name_and_relation_with_the_child}
+          name="name"
+          value={userFormData.name}
+          onChange={handleChange}
         />
         <TextField
           required
           id="outlined-required"
           label={FromAdmissionUtils.Students_Full_Name}
+          name="student_name"
+          value={userFormData.student_name}
+          onChange={handleChange}
         />
         <TextField
           required
           id="outlined-required"
           label={FromAdmissionUtils.Parents_Contact_number}
+          name="phone"
+          value={userFormData.phone}
+          onChange={handleChange}
         />
         <TextField
           required
           id="outlined-required"
           label={FromAdmissionUtils.Class_in_which_admission_is_sought}
+          name="class"
+          value={userFormData.class}
+          onChange={handleChange}
         />
         <Stack spacing={2} direction="row">
-          <Button variant="outlined">{FromAdmissionUtils.SubmitForm}</Button>
+          <Button type="submit" variant="outlined">
+            {FromAdmissionUtils.SubmitForm}
+          </Button>
         </Stack>
       </Container>
     </Box>

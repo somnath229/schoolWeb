@@ -6,8 +6,30 @@ import { Container, Box } from "@mui/system";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { contactUsUtils } from "../../utils/text_utils/textUtils";
+import { submitFormApi } from "@/utils/api/Api";
 
 const ContactForm = () => {
+  const [userFormData, setUserFormData] = React.useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      let response = await submitFormApi({
+        ...userFormData,
+        source: "contact_page",
+      });
+      console.log(response);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  const handleChange = (e) => {
+    setUserFormData({ ...userFormData, [e.target.name]: e.target.value });
+  };
   return (
     <Container
       sx={{
@@ -17,7 +39,7 @@ const ContactForm = () => {
         padding: "2rem",
       }}
     >
-      <Box sx={{ width: "40%" }}>
+      <Box sx={{ width: "40%" }} component={"form"} onSubmit={handleSubmit}>
         <Box
           sx={{
             width: 400,
@@ -38,7 +60,14 @@ const ContactForm = () => {
           >
             {contactUsUtils.Your_name}
           </Typography>
-          <TextField fullWidth id="fullWidth" />
+          <TextField
+            fullWidth
+            id="fullWidth"
+            name="name"
+            value={userFormData.name}
+            required
+            onChange={handleChange}
+          />
         </Box>
         <Box
           sx={{
@@ -60,7 +89,14 @@ const ContactForm = () => {
           >
             {contactUsUtils.Your_email}
           </Typography>
-          <TextField fullWidth id="fullWidth" />
+          <TextField
+            fullWidth
+            id="fullWidth"
+            name="email"
+            value={userFormData.email}
+            required
+            onChange={handleChange}
+          />
         </Box>
         <Box
           sx={{
@@ -82,7 +118,14 @@ const ContactForm = () => {
           >
             {contactUsUtils.Subject}
           </Typography>
-          <TextField fullWidth id="fullWidth" />
+          <TextField
+            fullWidth
+            id="fullWidth"
+            name="subject"
+            value={userFormData.subject}
+            required
+            onChange={handleChange}
+          />
         </Box>
         <Box
           sx={{
@@ -106,13 +149,22 @@ const ContactForm = () => {
           </Typography>
           <textarea
             id="w3review"
-            name="w3review"
+            name="message"
             rows="14"
             cols="50"
+            value={userFormData.message}
+            onChange={handleChange}
           ></textarea>
         </Box>
         <Stack spacing={2} direction="row">
-          <Button variant="outlined" sx={{width:"25%", margin:"0 1rem"}}> {contactUsUtils.Submit}</Button>
+          <Button
+            variant="outlined"
+            sx={{ width: "25%", margin: "0 1rem" }}
+            type="submit"
+          >
+            {" "}
+            {contactUsUtils.Submit}
+          </Button>
         </Stack>
       </Box>
       <Box
