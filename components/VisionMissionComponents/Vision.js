@@ -6,14 +6,42 @@ import { VisionUtils } from "../../utils/text_utils/textUtils";
 import { styled } from "@mui/material/styles";
 import CardMedia from "@mui/material/CardMedia";
 
+const ContainerWrapper = styled("Container")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+    width: "100%",
+    padding:"1rem",
+    margin:"auto"
+  },
+  [theme.breakpoints.up("md")]: {
+    flexDirection: "row",
+    width: "100%",
+  },
+  [theme.breakpoints.up("lg")]: {
+    flexDirection: "row",
+    width: "50%",
+  },
+}));
+const TypographyWrapper = styled("Container")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width:"100%"
+  },
+  [theme.breakpoints.up("md")]: {
+    width:"100%"
+  }, 
+  [theme.breakpoints.up("lg")]: {
+    width:"50%"
+  },
+}));
+
 const Vision = () => {
   return (
     <Container
       maxWidth="false"
       sx={{ width: "100%", background: "#edeaea", height: "100%", display:"flex", justifyContent:"center", alignItems:"center"}}
     >
-      <Box sx={{ width: "50%", margin: "auto", display:"flex", justifyContent:"center", alignItems:"center", padding:"5rem 0" }}>
-        <Container
+      <ContainerWrapper sx={{ width: "50%", margin: "auto", display:"flex", justifyContent:"center", alignItems:"center", padding:"5rem 0" }}>
+        <TypographyWrapper
           sx={{
             width: "50%",
             margin: "0",
@@ -51,8 +79,8 @@ const Vision = () => {
           >
             {VisionUtils.We_strive_to_develop_a_balanced_emotional_character}
           </Typography>
-        </Container>
-        <Container
+        </TypographyWrapper>
+        <TypographyWrapper
           sx={{
             width: "50%",
             margin: "auto",
@@ -68,8 +96,8 @@ const Vision = () => {
               boxShadow: "-5px 0px 6px 0px rgba(0,0,0,0.2)",
             }}
           />
-        </Container>
-      </Box>
+        </TypographyWrapper>
+      </ContainerWrapper>
     </Container>
   );
 };
