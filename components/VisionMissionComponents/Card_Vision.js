@@ -6,6 +6,7 @@ const ContainerWrapper = styled("Container")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     width: "100%",
+    padding:"1rem"
   },
   [theme.breakpoints.up("md")]: {
     flexDirection: "row",
