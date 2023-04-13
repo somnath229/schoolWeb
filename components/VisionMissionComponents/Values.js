@@ -9,14 +9,31 @@ import CardMedia from "@mui/material/CardMedia";
 const ContainerWrapper = styled("Container")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
+    width: "100%",
+    padding:"1rem",
+    margin:"auto"
   },
   [theme.breakpoints.up("md")]: {
-    flexDirection: "column",
-  }, 
+    flexDirection: "row",
+    width: "100%",
+  },
   [theme.breakpoints.up("lg")]: {
     flexDirection: "row",
+    width: "50%",
   },
 }));
+const TypographyWrapper = styled("Container")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width:"100%"
+  },
+  [theme.breakpoints.up("md")]: {
+    width:"100%"
+  }, 
+  [theme.breakpoints.up("lg")]: {
+    width:"50%"
+  },
+}));
+
 const Values = () => {
   return (
     <ContainerWrapper
@@ -32,13 +49,13 @@ const Values = () => {
         padding: "2rem",
       }}
     >
-      <Container
+      <ContainerWrapper
         sx={{
           width: "50%",
           display: "flex",
           alignItem: "center",
           justifyContent: "center",
-          margin: "auto 0",
+          margin: "auto",
         }}
       >
         <CardMedia
@@ -51,12 +68,11 @@ const Values = () => {
             boxShadow: "-5px 0px 6px 0px rgba(0,0,0,0.2)",
           }}
         />
-      </Container>
-      <Container
+      </ContainerWrapper>
+      <TypographyWrapper
         sx={{
-          width: "50%",
           margin: "0",
-          padding: "0",
+          padding: "2rem",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -70,7 +86,7 @@ const Values = () => {
           sx={{
             fontSize: "34px",
             fontWeight: "600",
-            lineHeight: "1em",
+            lineHeight: "1.4em",
             letterSpacing: "-0.5px",
             color: "#203b6a",
           }}
@@ -83,7 +99,7 @@ const Values = () => {
           sx={{
             fontSize: "20px",
             fontWeight: "300",
-            lineHeight: "1em",
+            lineHeight: "1.2em",
             letterSpacing: "-0.5px",
             paddingBottom: "1rem",
           }}
@@ -96,13 +112,13 @@ const Values = () => {
           sx={{
             fontSize: "20px",
             fontWeight: "300",
-            lineHeight: "1em",
+            lineHeight: "1.2em",
             letterSpacing: "-0.5px",
           }}
         >
           {ValuesUtils.We_enable_our_students_to_understand}
         </Typography>
-      </Container>
+      </TypographyWrapper>
     </ContainerWrapper>
   );
 };
