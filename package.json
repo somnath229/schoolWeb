@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "dev:static": "serve ./out",
+    "build:staging": "env-cmd -f .env.staging next build && next export",
+    "build:production": "env-cmd -f .env.production next build && next export",
+    "build:development": "env-cmd -f .env.development next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -28,4 +31,5 @@
     "react-elastic-carousel": "^0.11.5",
     "styled-components": "^5.3.9"
   }
+  
 }
