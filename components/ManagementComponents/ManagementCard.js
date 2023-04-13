@@ -5,8 +5,31 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
+import { styled } from "@mui/material/styles";
 import { ManagementCardUtils } from "../../utils/text_utils/textUtils";
 
+const ContainerWrapper = styled("Container")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+  },
+  [theme.breakpoints.up("md")]: {
+    flexDirection: "row",
+  },
+  [theme.breakpoints.up("lg")]: {
+    flexDirection: "row",
+  },
+}));
+const BoxWrapper = styled("Container")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.up("md")]: {
+    width: "50%",
+  },
+  [theme.breakpoints.up("lg")]: {
+    width: "50%",
+  },
+}));
 const ManagementCard = () => {
   const theme = useTheme();
   return (
@@ -23,15 +46,16 @@ const ManagementCard = () => {
       >
         {ManagementCardUtils.MANAGEMENT}
       </Typography>
-      <Card
+      <ContainerWrapper
         sx={{
           display: "flex",
+          // flexDirection:"column",
           width: "100%",
           background: "#f6f6f6",
           margin: "1rem",
         }}
       >
-        <Box
+        <BoxWrapper
           sx={{
             width: "50%",
             border: "1px solid hsla(0,0%,50.2%,.5019607843137255);",
@@ -42,8 +66,8 @@ const ManagementCard = () => {
             sx={{ width: 300, padding: "1rem" }}
             image="https://www.shalominternationalschool.com/wp-content/uploads/2020/02/Sahebrao_Biramane-266x300.jpg"
           />
-        </Box>
-        <Box
+        </BoxWrapper>
+        <BoxWrapper
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -91,9 +115,9 @@ const ManagementCard = () => {
               {ManagementCardUtils.Sahebrao_Shivram_Biramane_Founder}
             </Typography>
           </CardContent>
-        </Box>
-      </Card>
-      <Card
+        </BoxWrapper>
+      </ContainerWrapper>
+      <ContainerWrapper
         sx={{
           display: "flex",
           width: "100%",
@@ -101,7 +125,7 @@ const ManagementCard = () => {
           margin: "1rem",
         }}
       >
-        <Box
+        <BoxWrapper
           sx={{
             width: "50%",
             border: "1px solid hsla(0,0%,50.2%,.5019607843137255);",
@@ -112,8 +136,8 @@ const ManagementCard = () => {
             sx={{ width: 300, padding: "1rem" }}
             image="https://www.shalominternationalschool.com/wp-content/uploads/2020/02/Ajit_Biramane-266x300.jpg"
           />
-        </Box>
-        <Box
+        </BoxWrapper>
+        <BoxWrapper
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -148,9 +172,9 @@ const ManagementCard = () => {
               {ManagementCardUtils.His_management_style}
             </Typography>
           </CardContent>
-        </Box>
-      </Card>
-      <Card
+        </BoxWrapper>
+      </ContainerWrapper>
+      <ContainerWrapper
         sx={{
           display: "flex",
           width: "100%",
@@ -158,7 +182,7 @@ const ManagementCard = () => {
           margin: "1rem",
         }}
       >
-        <Box
+        <BoxWrapper
           sx={{
             width: "50%",
             border: "1px solid hsla(0,0%,50.2%,.5019607843137255);",
@@ -169,8 +193,8 @@ const ManagementCard = () => {
             sx={{ width: 300, padding: "1rem" }}
             image="https://www.shalominternationalschool.com/wp-content/uploads/2020/02/Shweta_Biramane-266x300.jpg"
           />
-        </Box>
-        <Box
+        </BoxWrapper>
+        <BoxWrapper
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -219,8 +243,8 @@ const ManagementCard = () => {
               {ManagementCardUtils.Children_experience_compassion}
             </Typography>
           </CardContent>
-        </Box>
-      </Card>
+        </BoxWrapper>
+      </ContainerWrapper>
     </Container>
   );
 };
