@@ -17,6 +17,7 @@ const Root = styled("Box")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     display: "none",
     backgroundColor: "white",
+    color: "black",
     flexDirection: "column",
     alignItems: "flex-start",
     padding: "0",
@@ -25,6 +26,7 @@ const Root = styled("Box")(({ theme }) => ({
   [theme.breakpoints.up("md")]: {
     display: "none",
     backgroundColor: "white",
+    color: "black",
     flexDirection: "column",
     alignItems: "flex-start",
     padding: "0",
@@ -59,6 +61,22 @@ const Ham = styled("Box")(({ theme }) => ({
   },
 }));
 
+const MenuWrapper = styled("Box")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width: "75%",
+    display:"none",
+  },
+  [theme.breakpoints.up("md")]: {
+    width: "15%",
+    display:"none",
+
+  },
+  [theme.breakpoints.up("lg")]: {
+    width: "12%",
+    display:"none",
+
+  },
+}));
 function Navbar() {
   function navi() {
     var x = document.getElementById("rootI");
@@ -102,44 +120,54 @@ function Navbar() {
         <ListItem
           sx={{
             width: "auto",
-            padding: "15px 0",
-            fontSize: "16px",
-            fontWeight: "600",
           }}
         >
-          <Link href="/"   style={{  textDecoration: "none" }}>
-            <ListItemText primary={navbar.Home} sx={{ color: "white" }} />
+          <Link href="/" style={{ textDecoration: "none" }}>
+            <ListItemText
+              primary={navbar.Home}
+              sx={{
+                color: hamI ? "white" : "black",
+              }}
+            />
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/vision-mission"   style={{  textDecoration: "none" }}>
+          <Link href="/vision-mission" style={{ textDecoration: "none" }}>
             <ListItemText
               primary={navbar.VisionMission}
-              sx={{ whiteSpace: "nowrap", color: "white" }}
+              sx={{
+                color: hamI ? "white" : "black",
+              }}
             />
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/about-us"   style={{  textDecoration: "none" }}>
+          <Link href="/about-us" style={{ textDecoration: "none" }}>
             <ListItemText
               primary={navbar.About}
-              sx={{ whiteSpace: "nowrap", color: "white" }}
+              sx={{
+                color: hamI ? "white" : "black",
+              }}
             />
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/facilities"  style={{  textDecoration: "none" }}>
+          <Link href="/facilities" style={{ textDecoration: "none" }}>
             <ListItemText
               primary={navbar.Facilities}
-              sx={{ whiteSpace: "nowrap", color: "white" }}
+              sx={{
+                color: hamI ? "white" : "black",
+              }}
             />
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/management"   style={{  textDecoration: "none" }}>
+          <Link href="/management" style={{ textDecoration: "none" }}>
             <ListItemText
               primary={navbar.Management}
-              sx={{ whiteSpace: "nowrap", color: "white" }}
+              sx={{
+                color: hamI ? "white" : "black",
+              }}
             />
           </Link>
         </ListItem>
@@ -159,29 +187,31 @@ function Navbar() {
                   sx={{ color: "#fff", marginRight: ".6rem" }}
                 />
               </ListItem>
-              <Menu
-                {...bindMenu(popupState)}
-                sx={{ width: "12%", background: "none", marginTop: ".7rem" }}
-              >
-                <MenuItem
-                  onClick={popupState.close}
-                  sx={{ padding: ".5rem 1rem" }}
+              <MenuWrapper>
+                <Menu
+                  {...bindMenu(popupState)}
+                  sx={{ width: "100%", background: "none", marginTop: ".7rem" }}
                 >
-                  {navbar.OurRules}
-                </MenuItem>
-                <MenuItem
-                  onClick={popupState.close}
-                  sx={{ padding: ".5rem 1rem" }}
-                >
-                  {navbar.ThingsToBring}
-                </MenuItem>
-                <MenuItem
-                  onClick={popupState.close}
-                  sx={{ padding: ".5rem 1rem" }}
-                >
-                  {navbar.ParentDeclaration}
-                </MenuItem>
-              </Menu>
+                  <MenuItem
+                    onClick={popupState.close}
+                    sx={{ padding: ".5rem 1rem" }}
+                  >
+                    {navbar.OurRules}
+                  </MenuItem>
+                  <MenuItem
+                    onClick={popupState.close}
+                    sx={{ padding: ".5rem 1rem" }}
+                  >
+                    {navbar.ThingsToBring}
+                  </MenuItem>
+                  <MenuItem
+                    onClick={popupState.close}
+                    sx={{ padding: ".5rem 1rem" }}
+                  >
+                    {navbar.ParentDeclaration}
+                  </MenuItem>
+                </Menu>
+              </MenuWrapper>
             </React.Fragment>
           )}
         </PopupState>
@@ -199,41 +229,53 @@ function Navbar() {
                 />
                 <KeyboardArrowDownIcon sx={{ color: "#fff" }} />
               </ListItem>
-              <Menu
-                {...bindMenu(popupState)}
-                sx={{ width: "12%", background: "none", marginTop: ".7rem" }}
-              >
-                {" "}
-                <MenuItem
-                  onClick={popupState.close}
-                  sx={{ padding: ".5rem 1rem" }}
+              <MenuWrapper>
+                <Menu
+                  {...bindMenu(popupState)}
+                  sx={{ width: "auto", background: "none", marginTop: ".7rem" }}
                 >
-                  {navbar.Announcements}
-                </MenuItem>
-                <MenuItem
-                  onClick={popupState.close}
-                  sx={{ padding: ".5rem 1rem" }}
-                >
-                  {navbar.SchoolEvents}
-                </MenuItem>
-                <MenuItem
-                  onClick={popupState.close}
-                  sx={{ padding: ".5rem 1rem" }}
-                >
-                  {navbar.ExamResults}
-                </MenuItem>
-              </Menu>
+                  {" "}
+                  <MenuItem
+                    onClick={popupState.close}
+                    sx={{ padding: ".5rem 1rem" }}
+                  >
+                    {navbar.Announcements}
+                  </MenuItem>
+                  <MenuItem
+                    onClick={popupState.close}
+                    sx={{ padding: ".5rem 1rem" }}
+                  >
+                    {navbar.SchoolEvents}
+                  </MenuItem>
+                  <MenuItem
+                    onClick={popupState.close}
+                    sx={{ padding: ".5rem 1rem" }}
+                  >
+                    {navbar.ExamResults}
+                  </MenuItem>
+                </Menu>
+              </MenuWrapper>
             </React.Fragment>
           )}
         </PopupState>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/admission"  style={{  textDecoration: "none" }}>
-            <ListItemText primary={navbar.Admission} sx={{ color: "white" }} />
+          <Link href="/admission" style={{ textDecoration: "none" }}>
+            <ListItemText
+              primary={navbar.Admission}
+              sx={{
+                color: hamI ? "white" : "black",
+              }}
+            />
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/contact"  style={{  textDecoration: "none" }}>
-            <ListItemText primary={navbar.Contact} sx={{ color: "white" }} />
+          <Link href="/contact" style={{ textDecoration: "none" }}>
+            <ListItemText
+              primary={navbar.Contact}
+              sx={{
+                color: hamI ? "white" : "black",
+              }}
+            />
           </Link>
         </ListItem>
       </Root>
