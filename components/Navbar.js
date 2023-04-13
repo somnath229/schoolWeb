@@ -107,12 +107,12 @@ function Navbar() {
             fontWeight: "600",
           }}
         >
-          <Link href="/">
+          <Link href="/"   style={{  textDecoration: "none" }}>
             <ListItemText primary={navbar.Home} sx={{ color: "white" }} />
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/vision-mission">
+          <Link href="/vision-mission"   style={{  textDecoration: "none" }}>
             <ListItemText
               primary={navbar.VisionMission}
               sx={{ whiteSpace: "nowrap", color: "white" }}
@@ -120,7 +120,7 @@ function Navbar() {
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/about-us">
+          <Link href="/about-us"   style={{  textDecoration: "none" }}>
             <ListItemText
               primary={navbar.About}
               sx={{ whiteSpace: "nowrap", color: "white" }}
@@ -128,7 +128,7 @@ function Navbar() {
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/facilities">
+          <Link href="/facilities"  style={{  textDecoration: "none" }}>
             <ListItemText
               primary={navbar.Facilities}
               sx={{ whiteSpace: "nowrap", color: "white" }}
@@ -136,7 +136,7 @@ function Navbar() {
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/management">
+          <Link href="/management"   style={{  textDecoration: "none" }}>
             <ListItemText
               primary={navbar.Management}
               sx={{ whiteSpace: "nowrap", color: "white" }}
@@ -227,12 +227,12 @@ function Navbar() {
           )}
         </PopupState>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/admission">
+          <Link href="/admission"  style={{  textDecoration: "none" }}>
             <ListItemText primary={navbar.Admission} sx={{ color: "white" }} />
           </Link>
         </ListItem>
         <ListItem sx={{ width: "auto" }}>
-          <Link href="/contact">
+          <Link href="/contact"  style={{  textDecoration: "none" }}>
             <ListItemText primary={navbar.Contact} sx={{ color: "white" }} />
           </Link>
         </ListItem>
