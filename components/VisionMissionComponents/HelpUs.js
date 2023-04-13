@@ -22,12 +22,12 @@ const HelpUs = () => {
       maxWidth="false"
       className={styles.help}
       sx={{
-        minHeight: "36vh",
+        minHeight: "100%",
         background: "rgba(89, 89, 95, 0.8)",
         color: "white",
       }}
     >
-      <Container sx={{ padding: "5rem" }}>
+      <Container sx={{ padding: "5rem 3rem" }}>
         <Typography
           variant="h1"
           gutterBottom
@@ -70,7 +70,7 @@ const HelpUs = () => {
         > 
           {HelpUtils.If_you_have_a_suggestion}
         </Typography>
-        <Box sx={{width:"50%", margin:"auto", textAlign:"center"}}>
+        <Box sx={{width:"100%", margin:"auto", display:"flex", justifyContent:"center", alignItems:"center",flexWrap:"wrap"}}>
           <BoxColor sx={{backgroundColor:"#336", margin:".5rem"}}></BoxColor>
           <BoxColor sx={{backgroundColor:"#1da1f2", margin:".5rem"}}></BoxColor>
           <BoxColor sx={{backgroundColor:"#0077b5", margin:".5rem"}}></BoxColor>
