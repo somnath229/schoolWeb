@@ -9,7 +9,7 @@ import { FacilityCardtextUtils } from "../../utils/text_utils/textUtils";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 
-const FacilitiesCard = () => {
+const FacilitiesCard = () => { 
   return (
     <Container sx={{ padding: "5rem 0", display:"flex", alignItem:"center", justifyContent:"center", flexWrap:"wrap" }}>
       <Card sx={{ maxWidth: 300, margin:"2rem" }}>
