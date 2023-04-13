@@ -6,14 +6,40 @@ import { VisionMotoUtils } from "../../utils/text_utils/textUtils";
 import { styled } from "@mui/material/styles";
 import CardMedia from "@mui/material/CardMedia";
 
+const ContainerWrapper = styled("Container")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+    width: "100%",
+    padding:"1rem"
+  },
+  [theme.breakpoints.up("md")]: {
+    flexDirection: "row",
+    width: "100%",
+  },
+  [theme.breakpoints.up("lg")]: {
+    flexDirection: "row",
+    width: "50%",
+  },
+}));
+const TypographyWrapper = styled("Container")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.up("md")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.up("lg")]: {
+    width: "50%",
+  },
+}));
 const VisionMoto = () => {
   return (
     <Container
       maxWidth="false"
-      sx={{ width: "100%", height: "100vh", display:"flex", justifyContent:"center", alignItems:"center"}}
+      sx={{ width: "100%", height: "100%", display:"flex", justifyContent:"center", alignItems:"center"}}
     >
-      <Container sx={{ width: "50%", margin: "auto", display:"flex", justifyContent:"center", alignItems:"center", padding:"5rem 0" }}>
-      <Container
+      <ContainerWrapper sx={{ width: "50%", margin: "auto", display:"flex", justifyContent:"center", alignItems:"center", padding:"5rem 0" }}>
+      <ContainerWrapper
           sx={{
             width: "50%",
             margin: "auto",
@@ -68,8 +94,8 @@ const VisionMoto = () => {
           >
             {VisionMotoUtils.Grade_XI}
           </Typography>
-        </Container>
-        <Container
+        </ContainerWrapper>
+        <TypographyWrapper
           sx={{
             width: "50%",
             margin: "0",
@@ -135,9 +161,9 @@ const VisionMoto = () => {
           >
             {VisionMotoUtils.We_envision_empowering}
           </Typography>
-        </Container>
+        </TypographyWrapper>
         
-      </Container>
+      </ContainerWrapper>
     </Container>
   );
 };
