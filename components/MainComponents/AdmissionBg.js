@@ -37,6 +37,13 @@ const BoxWrapper = styled("Box")(({ theme }) => ({
     flexDirection: "row",
   },
 }));
+
+const Wrapper = styled("Box")(({ theme }) => ({
+  [theme.breakpoints.down("sm")]: {
+    height: "fit-content",
+  },
+}));
+
 const BtnWrapper = styled("Box")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     width: "100%",
@@ -51,7 +58,7 @@ const BtnWrapper = styled("Box")(({ theme }) => ({
 const AdmissionBg = () => {
   return (
     <Box maxWidth="false" className={styles.main}>
-      <Box
+      <Wrapper
         sx={{
           display: "flex",
           justifyContent: "flex-end",
@@ -144,7 +151,7 @@ const AdmissionBg = () => {
             </Box>
           </BoxWrapper>
         </TypographyWrapper>
-      </Box>
+      </Wrapper>
     </Box>
   );
 };
