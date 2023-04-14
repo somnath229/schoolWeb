@@ -20,7 +20,7 @@ const ContainerWrapperHead = styled("Container")(({ theme }) => ({
     flexWrap: "wrap",
   },
   [theme.breakpoints.up("lg")]: {
-    width: "55%",
+    width: "58%",
     flexWrap: "nowrap",
   },
 }));
@@ -77,6 +77,7 @@ const Header = () => {
           justifyContent: "center",
           alignItems: "center",
           padding: ".5rem 0",
+          flexWrap: "wrap",
         }}
       >
         <Typography
@@ -104,8 +105,10 @@ const Header = () => {
           sx={{
             display: "flex",
             alignItems: "center",
-            width: "auto",
+            justifyContent: "center",
+            width: "100%",
             margin: "auto",
+            flexWrap: "wrap",
           }}
         >
           <Box
