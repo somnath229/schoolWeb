@@ -10,8 +10,8 @@ const ContainerWrapper = styled("Container")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     width: "100%",
-    padding:"1rem",
-    margin:"auto"
+    padding: "1rem",
+    margin: "auto",
   },
   [theme.breakpoints.up("md")]: {
     flexDirection: "row",
@@ -20,17 +20,18 @@ const ContainerWrapper = styled("Container")(({ theme }) => ({
   [theme.breakpoints.up("lg")]: {
     flexDirection: "row",
     width: "50%",
+    columnGap: "20px",
   },
 }));
 const TypographyWrapper = styled("Container")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
-    width:"100%"
+    width: "100%",
   },
   [theme.breakpoints.up("md")]: {
-    width:"100%"
-  }, 
+    width: "100%",
+  },
   [theme.breakpoints.up("lg")]: {
-    width:"50%"
+    width: "50%",
   },
 }));
 
@@ -38,9 +39,25 @@ const Vision = () => {
   return (
     <Container
       maxWidth="false"
-      sx={{ width: "100%", background: "#edeaea", height: "100%", display:"flex", justifyContent:"center", alignItems:"center"}}
+      sx={{
+        width: "100%",
+        background: "#edeaea",
+        height: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
     >
-      <ContainerWrapper sx={{ width: "50%", margin: "auto", display:"flex", justifyContent:"center", alignItems:"center", padding:"5rem 0" }}>
+      <ContainerWrapper
+        sx={{
+          width: "50%",
+          margin: "auto",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: "5rem 0",
+        }}
+      >
         <TypographyWrapper
           sx={{
             width: "50%",
