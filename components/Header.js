@@ -19,8 +19,8 @@ const ContainerWrapperHead = styled("Container")(({ theme }) => ({
     width: "75%",
     flexWrap: "wrap",
   },
-  [theme.breakpoints.up("lg")]: {
-    width: "58%",
+  [theme.breakpoints.up("xl")]: {
+    width: "80%",
     flexWrap: "nowrap",
   },
 }));
@@ -59,7 +59,6 @@ const Header = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        width: "55%",
         margin: "auto",
         textAlign: "justify",
       }}
@@ -71,6 +70,7 @@ const Header = () => {
         <Image src="/logo1.png" alt="loading..." />
       </HeadeImage>
       <Container
+        maxWidth={false}
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -78,6 +78,8 @@ const Header = () => {
           alignItems: "center",
           padding: ".5rem 0",
           flexWrap: "wrap",
+          width: "fit-content",
+          margin: "0px",
         }}
       >
         <Typography
