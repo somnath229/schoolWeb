@@ -54,8 +54,8 @@
   background-size: auto;
   position: absolute;
   top: 0;
-  right: 10%;
-  width: 80%;
+  right: 25%;
+  width: 60%;
   height: 100%;
   padding: 1rem;
   z-index: -1;
@@ -69,11 +69,11 @@
 }
 .fadeIn {
   animation-name: fadeIn;
-  animation-duration: 2s;
+  animation-duration: 5s;
 }
 @keyframes fadeIn {
   0% {
-    opacity: 0;
+    opacity: -1;
   }
   100% {
     opacity: 1;
