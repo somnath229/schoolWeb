@@ -45,7 +45,7 @@ const BtnWrapper = styled("Box")(({ theme }) => ({
     width: "100%",
   },
   [theme.breakpoints.up("lg")]: {
-    width: "35%",
+    width: "45%",
   },
 }));
 const AdmissionBg = () => {
@@ -113,6 +113,7 @@ const AdmissionBg = () => {
                   textDecoration: "underline",
                   border: "2px solid white",
                   background: "#720404F2",
+                  fontFamily: "Roboto,Helvetica,Arial,sans-serif",
                   "&:hover": { backgroundColor: "#720404F2" },
                 }}
               >
@@ -135,6 +136,7 @@ const AdmissionBg = () => {
                   color: "white",
                   border: "2px solid white",
                   textDecoration: "underline",
+                  fontFamily: "Roboto,Helvetica,Arial,sans-serif",
                 }}
               >
                 {AdmissionBgUtils.Learn_More}
