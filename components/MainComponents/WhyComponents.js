@@ -40,12 +40,12 @@ const WhyComponents = () => {
           </Typography>
           <Card sx={{ maxWidth: 345, margin: "1rem", boxShadow: "none" }}>
             <CardActionArea sx={{ display: "flex", alignItems: "flex-start" }}>
-              <LanguageIcon sx={{ fontSize: "3rem", color: "#720404F2" }} />
+              <LanguageIcon sx={{ fontSize: "4rem", color: "#720404F2", paddingTop:"1rem" }} />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div" sx={{fontWeight:"600",fontSize:"20px",lineHeight:"1.4em"}}>
                   {WhyComponentsUtils.International_School}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary"  sx={{fontWeight:"400",fontSize:"14px",lineHeight:"1.6em", color:"#000000"}}>
                   {WhyComponentsUtils.International_School_Body}
                 </Typography>
               </CardContent>
@@ -53,12 +53,12 @@ const WhyComponents = () => {
           </Card>
           <Card sx={{ maxWidth: 345, margin: "1rem", boxShadow: "none" }}>
             <CardActionArea sx={{ display: "flex", alignItems: "flex-start" }}>
-              <FontDownloadIcon sx={{ fontSize: "3rem", color: "#720404F2" }} />
+              <FontDownloadIcon sx={{ fontSize: "4rem", color: "#720404F2", paddingTop:"1rem"  }} />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div"  sx={{fontWeight:"600",fontSize:"20px",lineHeight:"1.4em"}}>
                   {WhyComponentsUtils.National_State_Curriculum}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary"  sx={{fontWeight:"400",fontSize:"14px",lineHeight:"1.6em", color:"#000000"}}>
                   {WhyComponentsUtils.National_State_Curriculum_Body}
                 </Typography>
               </CardContent>
@@ -66,12 +66,12 @@ const WhyComponents = () => {
           </Card>
           <Card sx={{ maxWidth: 345, margin: "1rem", boxShadow: "none" }}>
             <CardActionArea sx={{ display: "flex", alignItems: "flex-start" }}>
-              <LaptopIcon sx={{ fontSize: "3rem", color: "#720404F2" }} />
+              <LaptopIcon sx={{ fontSize: "4rem", color: "#720404F2", paddingTop:"1rem"  }} />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div"  sx={{fontWeight:"600",fontSize:"20px",lineHeight:"1.4em"}}>
                   {WhyComponentsUtils.Smart_Classes}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary"  sx={{fontWeight:"400",fontSize:"14px",lineHeight:"1.6em", color:"#000000"}}>
                   {WhyComponentsUtils.Smart_Classes_Body}
                 </Typography>
               </CardContent>
@@ -79,12 +79,12 @@ const WhyComponents = () => {
           </Card>
           <Card sx={{ maxWidth: 345, margin: "1rem", boxShadow: "none" }}>
             <CardActionArea sx={{ display: "flex", alignItems: "flex-start" }}>
-              <BookIcon sx={{ fontSize: "3rem", color: "#720404F2" }} />
+              <BookIcon sx={{ fontSize: "4rem", color: "#720404F2", paddingTop:"1rem"  }} />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div"  sx={{fontWeight:"600",fontSize:"20px",lineHeight:"1.4em"}}>
                   {WhyComponentsUtils.CET_Coaching}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" sx={{fontWeight:"400",fontSize:"14px",lineHeight:"1.6em", color:"#000000"}}>
                   {WhyComponentsUtils.CET_Coaching_Body}
                 </Typography>
               </CardContent>
@@ -92,12 +92,12 @@ const WhyComponents = () => {
           </Card>
           <Card sx={{ maxWidth: 345, margin: "1rem", boxShadow: "none" }}>
             <CardActionArea sx={{ display: "flex", alignItems: "flex-start" }}>
-              <SportsSoccerIcon sx={{ fontSize: "3rem", color: "#720404F2" }} />
+              <SportsSoccerIcon sx={{ fontSize: "4rem", color: "#720404F2", paddingTop:"1rem"  }} />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div"  sx={{fontWeight:"600",fontSize:"20px",lineHeight:"1.4em"}}>
                   {WhyComponentsUtils.Student_Clubs}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" sx={{fontWeight:"400",fontSize:"14px",lineHeight:"1.6em", color:"#000000"}}>
                   {WhyComponentsUtils.Student_Clubs_Body}
                 </Typography>
               </CardContent>
@@ -106,13 +106,13 @@ const WhyComponents = () => {
           <Card sx={{ maxWidth: 345, margin: "1rem", boxShadow: "none" }}>
             <CardActionArea sx={{ display: "flex", alignItems: "flex-start" }}>
               <ChangeHistoryIcon
-                sx={{ fontSize: "3rem", color: "#720404F2" }}
+                sx={{ fontSize: "4rem", color: "#720404F2", paddingTop:"1rem"  }}
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom variant="h5" component="div"  sx={{fontWeight:"600",fontSize:"20px",lineHeight:"1.4em"}}>
                   {WhyComponentsUtils.Natural_Surroundings}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" sx={{fontWeight:"400",fontSize:"14px",lineHeight:"1.6em", color:"#000000"}}>
                   {WhyComponentsUtils.Natural_Surroundings_Body}
                 </Typography>
               </CardContent>
