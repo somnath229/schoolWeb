@@ -10,8 +10,8 @@ const ContainerWrapper = styled("Container")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     flexDirection: "column",
     width: "100%",
-    padding:"1rem",
-    margin:"auto"
+    padding: "1rem",
+    margin: "auto",
   },
   [theme.breakpoints.up("md")]: {
     flexDirection: "row",
@@ -19,18 +19,29 @@ const ContainerWrapper = styled("Container")(({ theme }) => ({
   },
   [theme.breakpoints.up("lg")]: {
     flexDirection: "row",
-    width: "50%",
+    width: "80%",
+  },
+}));
+const ImageContainerWrapper = styled("Container")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.up("md")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.up("lg")]: {
+    width: "40%",
   },
 }));
 const TypographyWrapper = styled("Container")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
-    width:"100%"
+    width: "100%",
   },
   [theme.breakpoints.up("md")]: {
-    width:"100%"
-  }, 
+    width: "100%",
+  },
   [theme.breakpoints.up("lg")]: {
-    width:"50%"
+    width: "50%",
   },
 }));
 
@@ -49,7 +60,7 @@ const Values = () => {
         padding: "2rem",
       }}
     >
-      <ContainerWrapper
+      <ImageContainerWrapper
         sx={{
           width: "50%",
           display: "flex",
@@ -68,7 +79,7 @@ const Values = () => {
             boxShadow: "-5px 0px 6px 0px rgba(0,0,0,0.2)",
           }}
         />
-      </ContainerWrapper>
+      </ImageContainerWrapper>
       <TypographyWrapper
         sx={{
           margin: "0",
