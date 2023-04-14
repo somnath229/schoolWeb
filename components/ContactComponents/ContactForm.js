@@ -7,7 +7,22 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { contactUsUtils } from "../../utils/text_utils/textUtils";
 import { submitFormApi } from "@/utils/api/Api";
+import { styled } from "@mui/material/styles";
 
+const ContainerWrapper = styled("Container")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    flexDirection: "column",
+  },
+  [theme.breakpoints.up("md")]: {
+    width: "75%",
+    flexDirection: "row",
+  },
+  [theme.breakpoints.up("lg")]: {
+    width: "60%",
+    flexDirection: "row",
+  },
+}));
 const ContactForm = () => {
   const [userFormData, setUserFormData] = React.useState({
     name: "",
@@ -31,20 +46,25 @@ const ContactForm = () => {
     setUserFormData({ ...userFormData, [e.target.name]: e.target.value });
   };
   return (
-    <Container
+    <ContainerWrapper
       sx={{
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         padding: "2rem",
+        margin: "auto",
       }}
     >
-      <Box sx={{ width: "40%" }} component={"form"} onSubmit={handleSubmit}>
+      <ContainerWrapper
+        sx={{ marginRight: ".5rem" }}
+        component={"form"}
+        onSubmit={handleSubmit}
+      >
         <Box
           sx={{
             width: 400,
             maxWidth: "100%",
-            margin: "1rem",
+            margin: "1rem 0",
           }}
         >
           <Typography
@@ -73,7 +93,7 @@ const ContactForm = () => {
           sx={{
             width: 400,
             maxWidth: "100%",
-            margin: "1rem",
+            margin: "1rem 0",
           }}
         >
           <Typography
@@ -102,7 +122,7 @@ const ContactForm = () => {
           sx={{
             width: 400,
             maxWidth: "100%",
-            margin: "1rem",
+            margin: "1rem 0",
           }}
         >
           <Typography
@@ -131,7 +151,7 @@ const ContactForm = () => {
           sx={{
             width: 400,
             maxWidth: "100%",
-            margin: "1rem",
+            margin: "1rem 0",
           }}
         >
           <Typography
@@ -147,29 +167,32 @@ const ContactForm = () => {
           >
             {contactUsUtils.Your_message}
           </Typography>
-          <textarea
-            id="w3review"
+          <TextField
+            id="outlined-multiline-static"
             name="message"
             rows="14"
             cols="50"
             value={userFormData.message}
             onChange={handleChange}
-          ></textarea>
+            multiline
+            rows={5}
+          />
         </Box>
         <Stack spacing={2} direction="row">
           <Button
             variant="outlined"
-            sx={{ width: "25%", margin: "0 1rem" }}
+            sx={{ width: "25%", margin: "0 0rem" }}
             type="submit"
           >
             {" "}
             {contactUsUtils.Submit}
           </Button>
         </Stack>
-      </Box>
+      </ContainerWrapper>
       <Box
         sx={{
-          width: "60%",
+          width: "100%",
+          padding: "1rem 0",
         }}
       >
         <CardMedia
@@ -178,7 +201,7 @@ const ContactForm = () => {
           image="https://www.shalominternationalschool.com/wp-content/uploads/2022/10/startup-photos-768x512.jpg"
         />
       </Box>
-    </Container>
+    </ContainerWrapper>
   );
 };
 
