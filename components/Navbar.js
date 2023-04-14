@@ -61,22 +61,22 @@ const Ham = styled("Box")(({ theme }) => ({
   },
 }));
 
-const MenuWrapper = styled("Box")(({ theme }) => ({
-  [theme.breakpoints.down("md")]: {
-    width: "75%",
-    display:"none",
-  },
-  [theme.breakpoints.up("md")]: {
-    width: "15%",
-    display:"none",
+// const MenuWrapper = styled("Box")(({ theme }) => ({
+//   [theme.breakpoints.down("md")]: {
+//     width: "75%",
+//     display:"none",
+//   },
+//   [theme.breakpoints.up("md")]: {
+//     width: "15%",
+//     display:"none",
 
-  },
-  [theme.breakpoints.up("lg")]: {
-    width: "12%",
-    display:"none",
+//   },
+//   [theme.breakpoints.up("lg")]: {
+//     width: "12%",
+//     display:"none",
 
-  },
-}));
+//   },
+// }));
 function Navbar() {
   function navi() {
     var x = document.getElementById("rootI");
@@ -171,7 +171,7 @@ function Navbar() {
             />
           </Link>
         </ListItem>
-        <PopupState variant="popover" popupId="demo-popup-menu">
+        {/* <PopupState variant="popover" popupId="demo-popup-menu">
           {(popupState) => (
             <React.Fragment>
               <ListItem
@@ -257,7 +257,7 @@ function Navbar() {
               </MenuWrapper>
             </React.Fragment>
           )}
-        </PopupState>
+        </PopupState> */}
         <ListItem sx={{ width: "auto" }}>
           <Link href="/admission" style={{ textDecoration: "none" }}>
             <ListItemText
