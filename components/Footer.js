@@ -21,6 +21,24 @@ const ContainerWrapper = styled("Container")(({ theme }) => ({
   },
 }));
 
+const FooterWrapper = styled("Box")(({ theme }) => ({
+  padding: theme.spacing(1),
+  [theme.breakpoints.down("sm")]: {
+    flexDirection: "column",
+    width: "100%",
+    textAlign: "center",
+  },
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+  },
+  [theme.breakpoints.up("md")]: {
+    flexDirection: "row",
+  },
+  [theme.breakpoints.up("lg")]: {
+    flexDirection: "row",
+  },
+}));
+
 const BoxWrapper = styled("Box")(({ theme }) => ({
   padding: theme.spacing(1),
   [theme.breakpoints.down("md")]: {
@@ -134,12 +152,12 @@ const Footer = () => {
         sx={{
           width: "100%",
           display: "flex",
-          alignItems:"center",
-          justifyContent:"center",
+          alignItems: "center",
+          justifyContent: "center",
           height: "100%",
           width: "100%",
           flexWrap: "wrap",
-          padding:"2rem 0"
+          padding: "2rem 0",
         }}
       >
         <BoxWrapper
@@ -250,7 +268,7 @@ const Footer = () => {
           width: "100%",
         }}
       >
-        <Box
+        <FooterWrapper
           sx={{
             display: "flex",
             height: "100%",
@@ -269,7 +287,7 @@ const Footer = () => {
             </Typography>
             <Typography style={{ maxWidth: "120px" }}>{foot.Insta}</Typography>
           </Box>
-        </Box>
+        </FooterWrapper>
       </Box>
     </Box>
   );
