@@ -30,7 +30,7 @@ const AdmissionForm = () => {
   return (
     <Box
       sx={{
-        padding: "4rem",
+        padding: "4rem 0",
         "& .MuiTextField-root": { m: 1, width: "100%" },
       }}
       noValidate
@@ -117,8 +117,12 @@ const AdmissionForm = () => {
           value={userFormData.class}
           onChange={handleChange}
         />
-        <Stack spacing={2} direction="row">
-          <Button type="submit" variant="outlined">
+        <Stack
+          spacing={2}
+          direction="row"
+          sx={{ margin: "1rem", display: "flex", justifyContent: "flex-end" }}
+        >
+          <Button type="submit" variant="outlined" sx={{ width: "25%", padding:".8rem 0", color:"black" }}>
             {FromAdmissionUtils.SubmitForm}
           </Button>
         </Stack>
