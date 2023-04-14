@@ -244,6 +244,7 @@ const ContactAddress = () => {
                     lineHeight: "1.4em",
                     letterSpacing: "-0.5px",
                     color: "#666666",
+                    wordWrap: "break-word",
                   }}
                 >
                   {contactUsUtils.email_Address}
