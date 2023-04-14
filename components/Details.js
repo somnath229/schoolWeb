@@ -34,7 +34,7 @@ const Details = () => {
         justifyContent: "space-around",
         paddingBottom: "2rem",
         margin: "auto",
-        background: "#E7E7E7",
+        background: "#f9f9f9",
       }}
     >
       <ContainerWrapper
