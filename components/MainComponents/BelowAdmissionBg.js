@@ -63,7 +63,7 @@ const BelowAdmissionBg = () => {
             />
           </ImageWrapper>
           <Box
-            sx={{ width: "100%", padding: "4.5rem" }}
+            sx={{ width: "100%", padding: "4.5rem 2rem" }}
             className={styles.animated}
           >
             <Typography
