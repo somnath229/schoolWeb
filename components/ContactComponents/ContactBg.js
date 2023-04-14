@@ -4,7 +4,19 @@ import Typography from "@mui/material/Typography";
 import { contactUsUtils } from "../../utils/text_utils/textUtils";
 import styles from "@/styles/Home.module.css";
 import { Container } from "@mui/system";
+import { styled } from "@mui/material/styles";
 
+const TypographyWrapper = styled("Typography")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    fontSize: "40px",
+  },
+  [theme.breakpoints.up("md")]: {
+    fontSize: "40px",
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: "60px",
+  },
+}));
 const ContactBg = () => {
   return (
     <Box maxWidth="false" className={styles.contactBgDesigne}>
@@ -25,19 +37,19 @@ const ContactBg = () => {
           textAlign: "left",
         }}
       >
-        <Container sx={{ width: "50%" }}>
-          <Typography
+        <Container sx={{ width: "50%", padding:"0" }}>
+          <TypographyWrapper
             variant="h4"
             gutterBottom
             sx={{
               fontWeight: "400",
               fontSize: "60px",
-              lineHeight: ".6em",
+              lineHeight: "1em",
               letterSpacing: "-0.5px",
             }}
           >
             {contactUsUtils.Contact_Us}
-          </Typography>
+          </TypographyWrapper>
           <Typography
             variant="h4"
             gutterBottom
