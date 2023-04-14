@@ -23,6 +23,12 @@ const ContainerWrapper = styled("Container")(({ theme }) => ({
     flexDirection: "row",
   },
 }));
+const Message = styled("Typography")(({ theme }) => ({
+  fontSize: "24px",
+  fontWeight: "600",
+  textAlign: "center",
+  fontFamily: "Roboto",
+}));
 const ContactForm = () => {
   const [userFormData, setUserFormData] = React.useState({
     name: "",
@@ -30,6 +36,7 @@ const ContactForm = () => {
     subject: "",
     message: "",
   });
+  const [flag, setFlag] = React.useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -37,6 +44,7 @@ const ContactForm = () => {
         ...userFormData,
         source: "contact_page",
       });
+      setFlag(true);
       console.log(response);
     } catch (error) {
       console.log(error);
@@ -53,142 +61,161 @@ const ContactForm = () => {
         justifyContent: "center",
         padding: "2rem",
         margin: "auto",
+        columnGap: "20px",
       }}
     >
-      <ContainerWrapper
-        sx={{ marginRight: ".5rem" }}
-        component={"form"}
-        onSubmit={handleSubmit}
-      >
-        <Box
-          sx={{
-            width: 400,
-            maxWidth: "100%",
-            margin: "1rem 0",
+      {!flag ? (
+        <ContainerWrapper sx={{ marginRight: ".5rem" }}>
+          <Box component={"form"} onSubmit={handleSubmit}>
+            <Box
+              sx={{
+                width: 400,
+                maxWidth: "100%",
+                margin: "1rem 0",
+              }}
+            >
+              <Typography
+                variant="h1"
+                gutterBottom
+                sx={{
+                  fontSize: "20px",
+                  fontWeight: "300",
+                  lineHeight: "1.4em",
+                  letterSpacing: "-0.5px",
+                  color: "black",
+                }}
+              >
+                {contactUsUtils.Your_name}
+              </Typography>
+              <TextField
+                fullWidth
+                id="fullWidth"
+                name="name"
+                value={userFormData.name}
+                required
+                onChange={handleChange}
+              />
+            </Box>
+            <Box
+              sx={{
+                width: 400,
+                maxWidth: "100%",
+                margin: "1rem 0",
+              }}
+            >
+              <Typography
+                variant="h1"
+                gutterBottom
+                sx={{
+                  fontSize: "20px",
+                  fontWeight: "300",
+                  lineHeight: "1.4em",
+                  letterSpacing: "-0.5px",
+                  color: "black",
+                }}
+              >
+                {contactUsUtils.Your_email}
+              </Typography>
+              <TextField
+                fullWidth
+                id="fullWidth"
+                name="email"
+                value={userFormData.email}
+                required
+                onChange={handleChange}
+              />
+            </Box>
+            <Box
+              sx={{
+                width: 400,
+                maxWidth: "100%",
+                margin: "1rem 0",
+              }}
+            >
+              <Typography
+                variant="h1"
+                gutterBottom
+                sx={{
+                  fontSize: "20px",
+                  fontWeight: "300",
+                  lineHeight: "1.4em",
+                  letterSpacing: "-0.5px",
+                  color: "black",
+                }}
+              >
+                {contactUsUtils.Subject}
+              </Typography>
+              <TextField
+                fullWidth
+                id="fullWidth"
+                name="subject"
+                value={userFormData.subject}
+                required
+                onChange={handleChange}
+              />
+            </Box>
+            <Box
+              sx={{
+                width: 400,
+                maxWidth: "100%",
+                margin: "1rem 0",
+              }}
+            >
+              <Typography
+                variant="h1"
+                gutterBottom
+                sx={{
+                  fontSize: "20px",
+                  fontWeight: "300",
+                  lineHeight: "1.4em",
+                  letterSpacing: "-0.5px",
+                  color: "black",
+                }}
+              >
+                {contactUsUtils.Your_message}
+              </Typography>
+              <TextField
+                id="outlined-multiline-static"
+                name="message"
+                cols="50"
+                value={userFormData.message}
+                onChange={handleChange}
+                multiline
+                rows={5}
+              />
+            </Box>
+            <Stack
+              spacing={2}
+              direction="row"
+              sx={{ justifyContent: "flex-end" }}
+            >
+              <Button
+                variant="outlined"
+                sx={{ width: "25%", margin: "0 0rem" }}
+                type="submit"
+              >
+                {" "}
+                {contactUsUtils.Submit}
+              </Button>
+            </Stack>
+          </Box>
+        </ContainerWrapper>
+      ) : (
+        <ContainerWrapper
+          style={{
+            width: "100%",
+            height: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column",
+            margin: "auto",
           }}
         >
-          <Typography
-            variant="h1"
-            gutterBottom
-            sx={{
-              fontSize: "20px",
-              fontWeight: "300",
-              lineHeight: "1.4em",
-              letterSpacing: "-0.5px",
-              color: "black",
-            }}
-          >
-            {contactUsUtils.Your_name}
-          </Typography>
-          <TextField
-            fullWidth
-            id="fullWidth"
-            name="name"
-            value={userFormData.name}
-            required
-            onChange={handleChange}
-          />
-        </Box>
-        <Box
-          sx={{
-            width: 400,
-            maxWidth: "100%",
-            margin: "1rem 0",
-          }}
-        >
-          <Typography
-            variant="h1"
-            gutterBottom
-            sx={{
-              fontSize: "20px",
-              fontWeight: "300",
-              lineHeight: "1.4em",
-              letterSpacing: "-0.5px",
-              color: "black",
-            }}
-          >
-            {contactUsUtils.Your_email}
-          </Typography>
-          <TextField
-            fullWidth
-            id="fullWidth"
-            name="email"
-            value={userFormData.email}
-            required
-            onChange={handleChange}
-          />
-        </Box>
-        <Box
-          sx={{
-            width: 400,
-            maxWidth: "100%",
-            margin: "1rem 0",
-          }}
-        >
-          <Typography
-            variant="h1"
-            gutterBottom
-            sx={{
-              fontSize: "20px",
-              fontWeight: "300",
-              lineHeight: "1.4em",
-              letterSpacing: "-0.5px",
-              color: "black",
-            }}
-          >
-            {contactUsUtils.Subject}
-          </Typography>
-          <TextField
-            fullWidth
-            id="fullWidth"
-            name="subject"
-            value={userFormData.subject}
-            required
-            onChange={handleChange}
-          />
-        </Box>
-        <Box
-          sx={{
-            width: 400,
-            maxWidth: "100%",
-            margin: "1rem 0",
-          }}
-        >
-          <Typography
-            variant="h1"
-            gutterBottom
-            sx={{
-              fontSize: "20px",
-              fontWeight: "300",
-              lineHeight: "1.4em",
-              letterSpacing: "-0.5px",
-              color: "black",
-            }}
-          >
-            {contactUsUtils.Your_message}
-          </Typography>
-          <TextField
-            id="outlined-multiline-static"
-            name="message"
-            rows="14"
-            cols="50"
-            value={userFormData.message}
-            onChange={handleChange}
-            multiline
-            rows={5}
-          />
-        </Box>
-        <Stack spacing={2} direction="row">
-          <Button
-            variant="outlined"
-            sx={{ width: "25%", margin: "0 0rem" }}
-            type="submit"
-          >
-            {" "}
-            {contactUsUtils.Submit}
-          </Button>
-        </Stack>
-      </ContainerWrapper>
+          <Message>Thank you for providing the details.</Message>
+          <Message>Our representative will contact you shortly.</Message>
+        </ContainerWrapper>
+      )}
       <Box
         sx={{
           width: "100%",
