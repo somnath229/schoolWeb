@@ -16,7 +16,33 @@ const ContainerWrapper = styled("Container")(({ theme }) => ({
   },
   [theme.breakpoints.up("lg")]: {
     flexDirection: "row",
-    width: "50%",
+    width: "60%",
+  },
+}));
+const ListItemWrapper = styled("ListItem")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+    paddingTop: "1rem",
+  },
+  [theme.breakpoints.up("md")]: {
+    flexDirection: "column",
+    paddingTop: "1rem",
+  },
+  [theme.breakpoints.up("lg")]: {
+    flexDirection: "row",
+    paddingRight: "1rem",
+    paddingTop: "1rem",
+  },
+}));
+const TypographyWrapper = styled("Typography")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    textAlign:"left",
+  },
+  [theme.breakpoints.up("md")]: {
+    textAlign:"left",
+  },
+  [theme.breakpoints.up("lg")]: {
+    textAlign:"right",
   },
 }));
 
@@ -27,134 +53,171 @@ const Moto = () => {
         display: "flex",
         alignItem: "center",
         justifyContent: "center",
-        width:"100%",
+        width: "100%",
         margin: "auto",
-        padding:"2rem"
+        padding: "2rem",
+        alignContent: "stretch",
       }}
     >
       <ContainerWrapper
-        sx={{ width: "50%", alignItem: "center", alignContent: "center" }}
+        sx={{
+          width: "50%",
+          alignItem: "center",
+          alignContent: "stretch",  
+          // margin: "2rem 0",   
+        }}
       >
-        <ListItem sx={{ width: "100%", poistion:"relative" }}>
-          <Typography
+        <ListItemWrapper
+          sx={{
+            width: "100%",
+            poistion: "relative",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <TypographyWrapper
             gutterBottom
             variant="h5"
             component="div"
             sx={{
               color: "#720404F2",
-              textAlign: "right",
-              width: "50%",
               fontSize: "45px",
               fontWeight: "500",
-              margin:"0"
+              margin: "0",
+              paddingRight:"1rem",
+              fontFamily: "Roboto,Helvetica,Arial,sans-serif"
             }}
           >
             {MotoUtils.n300}
-          </Typography>
+          </TypographyWrapper>
           <ListItemText
             primary={MotoUtils.n300_Body}
             sx={{
               color: "black",
               fontWeight: "400",
-              width: "50%",
+              width: "100%",
               fontSize: "20px",
-              lineHeight:"1.4em",
-              paddingLeft:"2rem"
+              lineHeight: "1.4em",
+              flexWrap: "wrap",
+              textAlign: "left",
             }}
           />
-        </ListItem>
-        <ListItem sx={{ width: "100%", poistion:"relative" }}>
-          <Typography
+        </ListItemWrapper>
+        <ListItemWrapper
+          sx={{
+            width: "100%",
+            poistion: "relative",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <TypographyWrapper
             gutterBottom
             variant="h5"
             component="div"
             sx={{
               color: "#720404F2",
-              textAlign: "right",
-              width: "50%",
               fontSize: "45px",
               fontWeight: "500",
-              margin:"0"
+              margin: "0",
+              paddingRight:"1rem",
+              fontFamily: "Roboto,Helvetica,Arial,sans-serif"
             }}
           >
             {MotoUtils.n40}
-          </Typography>
+          </TypographyWrapper>
           <ListItemText
             primary={MotoUtils.n40_Body}
             sx={{
               color: "black",
               fontWeight: "400",
-              width: "50%",
+              width: "100%",
               fontSize: "20px",
-              lineHeight:"1.4em",
-              paddingLeft:"2rem"
+              lineHeight: "1.4em",
             }}
           />
-        </ListItem>
-        <ListItem sx={{ width: "100%", poistion:"relative" }}>
-          <Typography
+        </ListItemWrapper>
+        <ListItemWrapper
+          sx={{
+            width: "100%",
+            poistion: "relative",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <TypographyWrapper
             gutterBottom
             variant="h5"
             component="div"
             sx={{
               color: "#720404F2",
-              textAlign: "right",
-              width: "50%",
               fontSize: "45px",
               fontWeight: "500",
-              margin:"0"
+              margin: "0",
+              paddingRight:"1rem",
+              fontFamily: "Roboto,Helvetica,Arial,sans-serif"
             }}
           >
             {MotoUtils.n100}
-          </Typography>
+          </TypographyWrapper>
           <ListItemText
             primary={MotoUtils.n100_Body}
             sx={{
               color: "black",
               fontWeight: "400",
-              width: "50%",
+              width: "100%",
               fontSize: "20px",
-              lineHeight:"1.4em",
-              paddingLeft:"2rem"
+              lineHeight: "1.4em",
             }}
           />
-        </ListItem>
-        <ListItem sx={{ width: "100%", poistion:"relative" }}>
-          <Typography
+        </ListItemWrapper>
+        <ListItemWrapper
+          sx={{
+            width: "100%",
+            poistion: "relative",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <TypographyWrapper
             gutterBottom
             variant="h5"
             component="div"
             sx={{
               color: "#720404F2",
-              textAlign: "right",
-              width: "50%",
               fontSize: "45px",
               fontWeight: "500",
-              margin:"0"
+              margin: "0",
+              paddingRight:"1rem",
+              fontFamily: "Roboto,Helvetica,Arial,sans-serif"
             }}
           >
             {MotoUtils.n365}
-          </Typography>
+          </TypographyWrapper>
           <ListItemText
             primary={MotoUtils.n365_Body}
             sx={{
               color: "black",
               fontWeight: "400",
-              width: "50%",
+              width: "100%",
               fontSize: "20px",
-              lineHeight:"1.4em",
-              paddingLeft:"2rem"
+              lineHeight: "1.4em",
             }}
           />
-        </ListItem>
-        
+        </ListItemWrapper>
       </ContainerWrapper>
       <ContainerWrapper
         sx={{
           display: "flex",
-          alignItems: "center",
+          alignItems: "flex-start",
           justifyContent: "center",
           width: "50%",
+          padding: "1rem 0",
+          margin: "0",
         }}
       >
         <ListItem
@@ -163,7 +226,8 @@ const Moto = () => {
             alignItems: "center",
             alignContent: "center",
             width: "100%",
-            poistion:"relative" 
+            poistion: "relative",
+            padding:"0"
           }}
         >
           <Typography
