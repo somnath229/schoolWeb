@@ -23,12 +23,12 @@ const SendUs = () => {
       maxWidth="false"
       className={styles.send}
       sx={{
-        minHeight: "36vh",
+        minHeight: "100%",
         background: "rgba(14, 20, 56, 0.7)",
         color: "white",
       }}
     >
-      <Container sx={{ padding: "5rem" }}>
+      <Container sx={{ padding: "5rem 3rem" }}>
         <Typography
           variant="h1"
           gutterBottom
@@ -57,7 +57,7 @@ const SendUs = () => {
         >
           {contactUsUtils.Fill_up_the_form}
         </Typography>
-        <Box sx={{ width: "50%", margin: "auto", textAlign: "center" }}>
+        <Box sx={{width:"100%", margin:"auto", display:"flex", justifyContent:"center", alignItems:"center",flexWrap:"wrap"}}>
           <BoxColor
             sx={{ backgroundColor: "#336", margin: ".5rem" }}
           ></BoxColor>
