@@ -6,7 +6,22 @@ import CardMedia from "@mui/material/CardMedia";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
+import { styled } from "@mui/material/styles";
 
+const BoxWrapper = styled("Box")(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    width: "100%",
+    flexDirection: "column",
+  },
+  [theme.breakpoints.up("md")]: {
+    width: "100%",
+    flexDirection: "row",
+  },
+  [theme.breakpoints.up("lg")]: {
+    width: "65%",
+    flexDirection: "row",
+  },
+}));
 const ContactAddress = () => {
   return (
     <Container maxWidth="false">
@@ -46,29 +61,23 @@ const ContactAddress = () => {
           background: "#f7f9fa",
         }}
       >
-        <Box
+        <BoxWrapper
           sx={{
-            padding: "5rem",
-            width: "65%",
+            padding: "4rem 0",
             margin: "auto",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            flexWrap: "wrap",
           }}
         >
-          <Box
-            sx={{
-              width: "50%",
-            }}
-          >
+          <Box>
             <CardMedia
               component="img"
-              sx={{ width: 500 }}
+              sx={{ width: "90%" }}
               image="https://www.shalominternationalschool.com/wp-content/uploads/2022/08/shalom-school-building.jpg"
             />
           </Box>
-          <Box sx={{ width: "50%" }}>
+          <Box sx={{ paddingTop: "1rem" }}>
             <Typography
               variant="h2"
               gutterBottom
@@ -104,7 +113,7 @@ const ContactAddress = () => {
                 paddingBottom: "1rem",
               }}
             >
-              <Box sx={{ width: "10%" }}>
+              <Box sx={{ width: "10%", color: "#666666" }}>
                 <LocationOnIcon />
               </Box>
               <Box sx={{ width: "90%" }}>
@@ -170,7 +179,7 @@ const ContactAddress = () => {
                 paddingBottom: "1rem",
               }}
             >
-              <Box sx={{ width: "10%" }}>
+              <Box sx={{ width: "10%", color: "#666666" }}>
                 <LocalPhoneIcon />
               </Box>
               <Box sx={{ width: "90%" }}>
@@ -222,7 +231,7 @@ const ContactAddress = () => {
                 justifyContent: "center",
               }}
             >
-              <Box sx={{ width: "10%" }}>
+              <Box sx={{ width: "10%", color: "#666666" }}>
                 <EmailIcon />
               </Box>
               <Box sx={{ width: "90%" }}>
@@ -242,7 +251,7 @@ const ContactAddress = () => {
               </Box>
             </Box>
           </Box>
-        </Box>
+        </BoxWrapper>
       </Container>
     </Container>
   );
