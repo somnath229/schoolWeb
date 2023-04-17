@@ -39,7 +39,7 @@ const AffiliationCurriculum = () => {
           sx={{
             fontWeight: "normal",
             fontSize: "20px",
-            lineHeight: "1.2em",
+            lineHeight: "normal", 
             letterSpacing: "-0.15px",
             color: "#222222",
             paddingBottom: "2rem",
@@ -47,9 +47,9 @@ const AffiliationCurriculum = () => {
           }}
         >
           {AffiliationCurriculumUtils.The_School_follows}
-        </Typography>
+        </Typography> 
         <Typography
-          variant="h4"
+          variant="h4" 
           gutterBottom
           sx={{
             fontWeight: "normal",

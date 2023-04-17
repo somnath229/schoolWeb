@@ -65,11 +65,12 @@ const VisionMoto = () => {
               fontWeight: "700",
               lineHeight: "1.4em",
               letterSpacing: "-0.5px",
+              paddingBottom:"2rem"
             }}
           >
             {VisionMotoUtils.Our_Moto_qout}
           </Typography>
-          <Typography
+          <Typography  
             variant="h1"
             gutterBottom
             sx={{
@@ -90,7 +91,7 @@ const VisionMoto = () => {
                 lineHeight: "1.16em",
                 letterSpacing: "-0.5px",
                 color: "rgba(0,0,0,0.54)",
-            }}
+            }} 
           >
             {VisionMotoUtils.Grade_XI}
           </Typography>

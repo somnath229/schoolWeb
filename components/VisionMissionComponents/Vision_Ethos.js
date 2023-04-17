@@ -8,8 +8,8 @@ import { styled } from "@mui/material/styles";
 const ContainerWrapper = styled("Container")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     width: "100%",
-    margin:"0",
-    padding:"50px"
+    margin: "0",
+    padding: "50px",
   },
   [theme.breakpoints.up("md")]: {
     width: "100%",
@@ -21,16 +21,16 @@ const ContainerWrapper = styled("Container")(({ theme }) => ({
   },
 }));
 const TypographyWrapper = styled("Typography")(({ theme }) => ({
-    [theme.breakpoints.down("md")]: {
-      fontSize: "40px",
-    },
-    [theme.breakpoints.up("md")]: {
-      fontSize: "40px",
-    },
-    [theme.breakpoints.up("lg")]: {
-      fontSize: "60px",
-    },
-  }));
+  [theme.breakpoints.down("md")]: {
+    fontSize: "40px",
+  },
+  [theme.breakpoints.up("md")]: {
+    fontSize: "40px",
+  },
+  [theme.breakpoints.up("lg")]: {
+    fontSize: "60px",
+  },
+}));
 const Vision_Ethos = () => {
   return (
     <Container
@@ -40,12 +40,18 @@ const Vision_Ethos = () => {
         minHeight: "34vh",
         background: "rgba(89, 89, 95, 0.8)",
         color: "white",
-        
       }}
     >
-      <ContainerWrapper sx={{ padding:"30px", margin:"auto",display: "flex",
-        flexDirection:"column",
-        justifyContent: "flex-end", minHeight: "34vh",}}>
+      <ContainerWrapper
+        sx={{
+          padding: "30px",
+          margin: "auto",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "flex-end",
+          minHeight: "34vh",
+        }}
+      >
         <TypographyWrapper
           variant="h1"
           gutterBottom
@@ -62,10 +68,11 @@ const Vision_Ethos = () => {
           variant="h3"
           gutterBottom
           sx={{
-              fontSize:"20px",
+            fontSize: "20px",
             fontWeight: "300",
             lineHeight: "1em",
             letterSpacing: "-0.5px",
+            paddingLeft: "1rem",
           }}
         >
           {VisionEthos.values_and_objectives}

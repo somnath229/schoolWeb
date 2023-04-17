@@ -48,7 +48,6 @@ const FB = () => {
               fontSize: "3rem",
               lineHeight: "1.2em",
               letterSpacing: "-0.15px",
-              padding: "1rem 0",
             }}
           >
             {FacilitytextUtils.FACILITIES_OFFERED}
@@ -58,7 +57,7 @@ const FB = () => {
             gutterBottom
             sx={{
               fontWeight: "300",
-              fontSize: "2rem",
+              fontSize: "1.2rem",
               lineHeight: "1.2em",
               letterSpacing: "-0.15px",
             }}

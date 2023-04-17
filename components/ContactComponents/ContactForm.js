@@ -187,7 +187,7 @@ const ContactForm = () => {
             <Stack
               spacing={2}
               direction="row"
-              sx={{ justifyContent: "flex-end" }}
+              sx={{ justifyContent: "flex-start" }}
             >
               <Button
                 variant="outlined"
