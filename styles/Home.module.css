@@ -64,21 +64,6 @@
   position: relative;
 }
 
-.animated {
-  animation: fadeIn 5s;
-}
-.fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 5s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: -1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .vission::before {
   content: "";
   background: url(https://www.shalominternationalschool.com/wp-content/uploads/2022/10/benjamin-davies-287077-unsplash.jpg);
@@ -138,7 +123,7 @@
   position: relative;
 }
 
-.boxCol{
+.boxCol {
   height: 25px;
   width: 25px;
   background-color: #bbb;
@@ -204,4 +189,49 @@
 }
 .send {
   position: relative;
+}
+
+.animatedText {
+  animation: fadeIn 8s;
+  animation-duration: 8s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.cardAnimeRight {
+  animation: cardAnimationRight 5s ;
+  animation-direction: 2s;
+}
+
+
+@keyframes cardAnimationRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.cardAnimeLeft {
+  animation: cardAnimationLeft 5s ;
+  animation-direction: 2s;
+}
+
+@keyframes cardAnimationLeft {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
