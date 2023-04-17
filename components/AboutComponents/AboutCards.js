@@ -8,6 +8,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
+import styles from "@/styles/Home.module.css";
 
 const ContainerWrapper = styled("Container")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
@@ -49,7 +50,7 @@ const AboutCards = () => {
   return (
     <Container maxWidth="lg">
       <ContainerWrapper sx={{ width: "50%", margin: "auto", padding: "2rem" }}>
-        <CardWrapper sx={{ display: "flex", border: "none" }}>
+        <CardWrapper sx={{ display: "flex", border: "none" }} className={styles.cardAnimeRight}>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <CardContent sx={{ flex: "1 0 auto", width: "100%" }}>
               <Typography
@@ -105,6 +106,7 @@ const AboutCards = () => {
         </CardWrapper>
         <CardWrapper
           sx={{ display: "flex", border: "none", marginTop: "2rem" }}
+          className={styles.cardAnimeLeft}
         >
           <CardMediaWrapper sx={{ width: "25%" }}>
             <CardMedia
@@ -139,7 +141,7 @@ const AboutCards = () => {
             </CardContent>
           </Box>
         </CardWrapper>
-        <CardWrapper sx={{ display: "flex", border: "none" }}>
+        <CardWrapper sx={{ display: "flex", border: "none" }}  className={styles.cardAnimeRight}>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <CardContent sx={{ flex: "1 0 auto" }}>
               <Typography
@@ -179,7 +181,7 @@ const AboutCards = () => {
             />
           </CardMediaWrapper>
         </CardWrapper>
-        <CardWrapper sx={{ display: "flex", border: "none" }}>
+        <CardWrapper sx={{ display: "flex", border: "none" }}  className={styles.cardAnimeLeft}>
           <CardMediaWrapper sx={{ width: "25%", marginTop:"2rem" }}>
             <CardMedia
               component="img"
@@ -219,7 +221,7 @@ const AboutCards = () => {
             </CardContent>
           </Box>
         </CardWrapper>
-        <CardWrapper sx={{ display: "flex", border: "none" }}>
+        <CardWrapper sx={{ display: "flex", border: "none" }}  className={styles.cardAnimeRight}>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
             <CardContent sx={{ flex: "1 0 auto" }}>
               <Typography
@@ -275,6 +277,7 @@ const AboutCards = () => {
         </CardWrapper>
         <Card
           sx={{ display: "flex", border: "none", flexDirection: "column", boxShadow: "none" }}
+          className={styles.cardAnimeLeft}
         >
           <ContainerWrapper sx={{ width: "50%", padding: "1rem" }}>
             <Typography
