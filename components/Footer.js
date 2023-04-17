@@ -166,6 +166,7 @@ const Footer = () => {
             width: "50%",
             height: "100%",
             flexWrap: "wrap",
+            padding:"4rem 0"
           }}
         >
           <Typography
@@ -281,11 +282,10 @@ const Footer = () => {
         >
           <Typography>{foot.Copyrights}</Typography>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Typography style={{ maxWidth: "120px" }}>{foot.About}</Typography>
+            <Typography style={{ maxWidth: "90px" }}>{foot.About}</Typography>
             <Typography style={{ maxWidth: "120px" }}>
               {foot.Contact}
             </Typography>
-            <Typography style={{ maxWidth: "120px" }}>{foot.Insta}</Typography>
           </Box>
         </FooterWrapper>
       </Box>
