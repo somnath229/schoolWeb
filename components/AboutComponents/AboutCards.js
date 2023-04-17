@@ -29,6 +29,7 @@ const CardWrapper = styled("Card")(({ theme }) => ({
   },
   [theme.breakpoints.up("lg")]: {
     flexDirection: "row",
+    padding:"1rem 0"
   },
 }));
 const CardMediaWrapper = styled("CardMedia")(({ theme }) => ({
@@ -40,6 +41,7 @@ const CardMediaWrapper = styled("CardMedia")(({ theme }) => ({
   },
   [theme.breakpoints.up("lg")]: {
     width: "50%",
+    margin:"1rem"
   },
 }));
 const AboutCards = () => {
@@ -272,11 +274,11 @@ const AboutCards = () => {
           </CardMediaWrapper>
         </CardWrapper>
         <Card
-          sx={{ display: "flex", border: "none", flexDirection: "column" }}
+          sx={{ display: "flex", border: "none", flexDirection: "column", boxShadow: "none" }}
         >
           <ContainerWrapper sx={{ width: "50%", padding: "1rem" }}>
             <Typography
-              component="div"
+              component="div"   
               variant="h5"
               sx={{
                 fontWeight: "600",
