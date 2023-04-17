@@ -75,7 +75,7 @@ const AdmissionBg = () => {
           background: "rgba(0, 0, 0, 0.6)",
         }}
       >
-        <TypographyWrapper className={styles.animated}>
+        <TypographyWrapper className={styles.animatedText}>
           <Typography
             variant="h4"
             gutterBottom
