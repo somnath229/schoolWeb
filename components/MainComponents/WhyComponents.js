@@ -13,6 +13,7 @@ import LaptopIcon from "@mui/icons-material/Laptop";
 import BookIcon from "@mui/icons-material/Book";
 import SportsSoccerIcon from "@mui/icons-material/SportsSoccer";
 import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
+import styles from "@/styles/Home.module.css";
 
 const WhyComponents = () => {
   return (
@@ -35,6 +36,7 @@ const WhyComponents = () => {
               fontWeight: "700",
               color: "#720404F2",
             }}
+            className={styles.cardAnimeLeft}
           >
             {WhyComponentsUtils.Why_Shalom_International_School}
           </Typography>
