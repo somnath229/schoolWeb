@@ -36,15 +36,15 @@ const AboutUs = () => {
             padding:"0 2rem",
           }} 
         >
-          {AboutUsUtils.About_Us}
+          {AboutUsUtils.About_Us} 
         </Typography>
         <Typography
           variant="h4"
           gutterBottom
           sx={{
             fontWeight: "300",
-            fontSize: "18px",
-            lineHeight: "1em",
+            fontSize: "20px",
+            lineHeight: "1.4em", 
             letterSpacing: "-0.15px",
             padding:"0 2rem",
           }}
