@@ -13,7 +13,7 @@ const FacilitiesCard = () => {
   return (
     <Container sx={{ padding: "5rem 0", display:"flex", alignItem:"center", justifyContent:"center", flexWrap:"wrap" }}>
       <Card sx={{ maxWidth: 300, margin:"2rem" }}>
-        <CardActionArea>
+        <CardActionArea sx={{height:"100%"}}>
           <CardMedia
             component="img"
             height="300"
@@ -40,7 +40,8 @@ const FacilitiesCard = () => {
         </CardActionArea>
       </Card>
       <Card sx={{ maxWidth: 300, margin:"2rem" }}>
-        <CardActionArea>
+      <CardActionArea sx={{height:"100%"}}>
+
           <CardMedia
             component="img"
             height="300"
@@ -67,7 +68,8 @@ const FacilitiesCard = () => {
         </CardActionArea>
       </Card>
       <Card sx={{ maxWidth: 300, margin:"2rem" }}>
-        <CardActionArea>
+      <CardActionArea sx={{height:"100%"}}>
+
           <CardMedia
             component="img"
             height="300"
@@ -94,7 +96,8 @@ const FacilitiesCard = () => {
         </CardActionArea>
       </Card>
       <Card sx={{ maxWidth: 300, margin:"2rem" }}>
-        <CardActionArea>
+        <CardActionArea sx={{height:"100%"}}>
+        
           <CardMedia
             component="img"
             height="300"
@@ -121,7 +124,8 @@ const FacilitiesCard = () => {
         </CardActionArea>
       </Card>
       <Card sx={{ maxWidth: 300, margin:"2rem" }}>
-        <CardActionArea>
+      <CardActionArea sx={{height:"100%"}}>
+
           <CardMedia
             component="img"
             height="300"
@@ -148,7 +152,8 @@ const FacilitiesCard = () => {
         </CardActionArea>
       </Card>
       <Card sx={{ maxWidth: 300, margin:"2rem" }}>
-        <CardActionArea>
+      <CardActionArea sx={{height:"100%"}}>
+
           <CardMedia
             component="img"
             height="300"
