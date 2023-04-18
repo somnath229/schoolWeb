@@ -29,6 +29,7 @@ const BelowMoto = () => {
         background: "#720404F2",
         color: "white",
         padding: "2rem",
+        fontFamily: "Roboto,Helvetica,Arial,sans-serif"
       }}
     >
       <Typography
