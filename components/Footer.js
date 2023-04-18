@@ -85,6 +85,7 @@ const Footer = () => {
         }}
       >
         <Box
+          className={styles.iconPulse}
           sx={{
             textAlign: "center",
           }}
@@ -106,6 +107,7 @@ const Footer = () => {
           </Typography>
         </Box>
         <Box
+          className={styles.iconPulse}
           sx={{
             textAlign: "center",
           }}
@@ -127,6 +129,7 @@ const Footer = () => {
           </Typography>
         </Box>
         <Box
+          className={styles.iconPulse}
           sx={{
             textAlign: "center",
           }}
@@ -166,7 +169,7 @@ const Footer = () => {
             width: "50%",
             height: "100%",
             flexWrap: "wrap",
-            padding:"4rem 0"
+            padding: "4rem 0",
           }}
         >
           <Typography
