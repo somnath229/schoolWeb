@@ -132,7 +132,7 @@ const foot = {
   email: "email: ",
   email_Address: "info@shalominternationalschool.com",
   Copyrights: "© Copyrights 2022 | Designed by Imran Shaikh",
-  About: "About Us",
+  About: "About Us |",
   Contact: "Contact Us",
   Insta: "Instagram",
 };
