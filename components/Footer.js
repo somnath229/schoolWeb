@@ -278,18 +278,18 @@ const Footer = () => {
             height: "100%",
             alignItem: "center",
             justifyContent: "space-between",
-            width: "80%",
+            width: "100%",
             margin: "auto",
-            padding: "20px",
+            padding: "25px 40px",
           }}
         >
-          <Typography>{foot.Copyrights}</Typography>
+          <Typography sx={{fontWeight:"400", fontSize:"12px" }}>{foot.Copyrights}</Typography>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
-            <Typography style={{ maxWidth: "90px" }}>{foot.About}</Typography>
-            <Typography style={{ maxWidth: "120px" }}>
+            <Typography style={{ maxWidth: "60px", fontWeight:"400", fontSize:"12px" }}>{foot.About}</Typography>
+            <Typography style={{ maxWidth: "120px", fontWeight:"400", fontSize:"12px"  }}>
               {foot.Contact}
             </Typography>
-          </Box>
+          </Box>  
         </FooterWrapper>
       </Box>
     </Box>
