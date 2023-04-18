@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
 import ListItemText from "@mui/material/ListItemText";
 import ListItem from "@mui/material/ListItem";
+import styles from "@/styles/Home.module.css";
 
 const ContainerWrapper = styled("Container")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
@@ -36,13 +37,13 @@ const ListItemWrapper = styled("ListItem")(({ theme }) => ({
 }));
 const TypographyWrapper = styled("Typography")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
-    textAlign:"left",
+    textAlign: "left",
   },
   [theme.breakpoints.up("md")]: {
-    textAlign:"left",
+    textAlign: "left",
   },
   [theme.breakpoints.up("lg")]: {
-    textAlign:"right",
+    textAlign: "right",
   },
 }));
 
@@ -63,11 +64,12 @@ const Moto = () => {
         sx={{
           width: "50%",
           alignItem: "center",
-          alignContent: "stretch",  
-          // margin: "2rem 0",   
+          alignContent: "stretch",
+          // margin: "2rem 0",
         }}
       >
         <ListItemWrapper
+          className={styles.textfadeInDown}
           sx={{
             width: "100%",
             poistion: "relative",
@@ -85,8 +87,8 @@ const Moto = () => {
               fontSize: "45px",
               fontWeight: "500",
               margin: "0",
-              paddingRight:"1rem",
-              fontFamily: "Roboto,Helvetica,Arial,sans-serif"
+              paddingRight: "1rem",
+              fontFamily: "Roboto,Helvetica,Arial,sans-serif",
             }}
           >
             {MotoUtils.n300}
@@ -105,6 +107,7 @@ const Moto = () => {
           />
         </ListItemWrapper>
         <ListItemWrapper
+          className={styles.textfadeInDown}
           sx={{
             width: "100%",
             poistion: "relative",
@@ -122,8 +125,8 @@ const Moto = () => {
               fontSize: "45px",
               fontWeight: "500",
               margin: "0",
-              paddingRight:"1rem",
-              fontFamily: "Roboto,Helvetica,Arial,sans-serif"
+              paddingRight: "1rem",
+              fontFamily: "Roboto,Helvetica,Arial,sans-serif",
             }}
           >
             {MotoUtils.n40}
@@ -140,6 +143,7 @@ const Moto = () => {
           />
         </ListItemWrapper>
         <ListItemWrapper
+          className={styles.textfadeInDown}
           sx={{
             width: "100%",
             poistion: "relative",
@@ -157,8 +161,8 @@ const Moto = () => {
               fontSize: "45px",
               fontWeight: "500",
               margin: "0",
-              paddingRight:"1rem",
-              fontFamily: "Roboto,Helvetica,Arial,sans-serif"
+              paddingRight: "1rem",
+              fontFamily: "Roboto,Helvetica,Arial,sans-serif",
             }}
           >
             {MotoUtils.n100}
@@ -175,6 +179,7 @@ const Moto = () => {
           />
         </ListItemWrapper>
         <ListItemWrapper
+          className={styles.textfadeInDown}
           sx={{
             width: "100%",
             poistion: "relative",
@@ -192,8 +197,8 @@ const Moto = () => {
               fontSize: "45px",
               fontWeight: "500",
               margin: "0",
-              paddingRight:"1rem",
-              fontFamily: "Roboto,Helvetica,Arial,sans-serif"
+              paddingRight: "1rem",
+              fontFamily: "Roboto,Helvetica,Arial,sans-serif",
             }}
           >
             {MotoUtils.n365}
@@ -227,7 +232,7 @@ const Moto = () => {
             alignContent: "center",
             width: "100%",
             poistion: "relative",
-            padding:"0"
+            padding: "0",
           }}
         >
           <Typography

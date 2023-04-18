@@ -49,10 +49,9 @@ const ManagementCard = () => {
       <ContainerWrapper
         sx={{
           display: "flex",
-          // flexDirection:"column",
           width: "100%",
           background: "#f6f6f6",
-          margin: "1rem",
+          margin: "1rem 0",
         }}
       >
         <BoxWrapper
@@ -122,7 +121,7 @@ const ManagementCard = () => {
           display: "flex",
           width: "100%",
           background: "#f6f6f6",
-          margin: "1rem",
+          margin: "1rem 0",
         }}
       >
         <BoxWrapper
@@ -179,7 +178,7 @@ const ManagementCard = () => {
           display: "flex",
           width: "100%",
           background: "#f6f6f6",
-          margin: "1rem",
+          margin: "1rem 0",
         }}
       >
         <BoxWrapper

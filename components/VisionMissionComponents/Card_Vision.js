@@ -36,12 +36,6 @@ const Card_Vision = () => {
         sx={{
           margin: "1rem",
           width: "100%",
-          "&:hover": {
-            backgroundColor: "transparent",
-            backgroundImage:
-              "lineargradient(-45deg, #930000 0%, #1a65a3 100%)",
-            opacity: "0.2",
-          },
         }}
       />
 
