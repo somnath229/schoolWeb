@@ -284,7 +284,7 @@ const Footer = () => {
           }}
         >
           <Typography sx={{fontWeight:"400", fontSize:"12px" }}>{foot.Copyrights}</Typography>
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box sx={{ display: "flex", justifyContent: "flex-end" }}>
             <Typography style={{ maxWidth: "60px", fontWeight:"400", fontSize:"12px" }}>{foot.About}</Typography>
             <Typography style={{ maxWidth: "120px", fontWeight:"400", fontSize:"12px"  }}>
               {foot.Contact}
