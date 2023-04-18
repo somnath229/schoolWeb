@@ -121,7 +121,10 @@ const AdmissionBg = () => {
                   border: "2px solid white",
                   background: "#720404F2",
                   fontFamily: "Roboto,Helvetica,Arial,sans-serif",
-                  "&:hover": { backgroundColor: "#720404F2" },
+                  "&:hover": {
+                    backgroundColor: "#720404F2",
+                    cursor: "pointer",
+                  },
                 }}
               >
                 {AdmissionBgUtils.New_Admission}
@@ -144,6 +147,7 @@ const AdmissionBg = () => {
                   border: "2px solid white",
                   textDecoration: "underline",
                   fontFamily: "Roboto,Helvetica,Arial,sans-serif",
+                  "&:hover": { cursor: "pointer" },
                 }}
               >
                 {AdmissionBgUtils.Learn_More}
