@@ -48,7 +48,7 @@ const CardMediaWrapper = styled("CardMedia")(({ theme }) => ({
 const AboutCards = () => {
   const theme = useTheme();
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="lg" sx={{overflow:"hidden"}}>
       <ContainerWrapper sx={{ width: "50%", margin: "auto", padding: "2rem" }}>
         <CardWrapper sx={{ display: "flex", border: "none" }} className={styles.cardAnimeRight}>
           <Box sx={{ display: "flex", flexDirection: "column" }}>
