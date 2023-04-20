@@ -316,3 +316,55 @@ const contactUsUtils = {
   Submit: "Submit"
 };
 export { contactUsUtils };
+
+const carouselUtils = {
+  Club_Activities: "Club Activities",
+  View_More:"View More",
+};
+export { carouselUtils };
+
+const slideUtils = [
+  {
+    name: "Games_Sports",
+    imgSrc:
+      "https://www.shalominternationalschool.com/wp-content/uploads/2022/10/PSX_20221018_214030.jpg",
+    description:
+      "To help children build healthy and good physique, well-equipped gymnasium plays a vital role in build muscles and developing strong bones. Riding and Skating have now been recently introduced much to the delight of the students.",
+  },
+  {
+    name: "Games_Sports",
+    imgSrc:
+      "https://www.shalominternationalschool.com/wp-content/uploads/2022/10/PSX_20221018_213148.jpg",
+    description:
+      "To help children build healthy and good physique, well-equipped gymnasium plays a vital role in build muscles and developing strong bones. Riding and Skating have now been recently introduced much to the delight of the students.",
+  },
+  {
+    name: "Games_Sports",
+    imgSrc:
+      "https://www.shalominternationalschool.com/wp-content/uploads/2022/12/event-1.jpg",
+    description:
+      "To help children build healthy and good physique, well-equipped gymnasium plays a vital role in build muscles and developing strong bones. Riding and Skating have now been recently introduced much to the delight of the students.",
+  },
+  {
+    name: "Games_Sports",
+    imgSrc:
+      "https://www.shalominternationalschool.com/wp-content/uploads/2022/12/infirmary.png",
+    description:
+      "To help children build healthy and good physique, well-equipped gymnasium plays a vital role in build muscles and developing strong bones. Riding and Skating have now been recently introduced much to the delight of the students.",
+  },
+  {
+    name: "Games_Sports",
+    imgSrc:
+      "https://www.shalominternationalschool.com/wp-content/uploads/2022/12/DSC_1859.jpg",
+    description:
+      "To help children build healthy and good physique, well-equipped gymnasium plays a vital role in build muscles and developing strong bones. Riding and Skating have now been recently introduced much to the delight of the students.",
+  },
+  {
+    name: "Games_Sports",
+    imgSrc:
+      "https://www.shalominternationalschool.com/wp-content/uploads/2022/10/technolgy-in-school.jpg",
+    description:
+      "To help children build healthy and good physique, well-equipped gymnasium plays a vital role in build muscles and developing strong bones. Riding and Skating have now been recently introduced much to the delight of the students.",
+  },
+];
+export { slideUtils };
