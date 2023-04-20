@@ -6,6 +6,7 @@ import Values from "../../components/VisionMissionComponents/Values";
 import Vision from "../../components/VisionMissionComponents/Vision";
 import VisionMoto from "../../components/VisionMissionComponents/VisionMoto";
 import HelpUs from "../../components/VisionMissionComponents/HelpUs";
+import Carousel from "../../components/VisionMissionComponents/Carousel";
 
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <Values />
       <Vision />
       <VisionMoto />
+      <Carousel />
       <HelpUs />
          
     </>
