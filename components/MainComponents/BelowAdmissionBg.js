@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import { BelowAdmissionBgUtils } from "../../utils/text_utils/textUtils";
 import Typography from "@mui/material/Typography";
 import { styled } from "@mui/material/styles";
+import Image from "next/image";
 
 const BoxWrapper = styled("Box")(({ theme }) => ({
   [theme.breakpoints.down("md")]: {

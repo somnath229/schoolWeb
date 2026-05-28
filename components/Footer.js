@@ -297,3 +297,9 @@ const Footer = () => {
 };
 
 export default Footer;
+
+// "build:staging": "env-cmd -f .env.staging next build && next export",
+    // "build:production": "env-cmd -f .env.production next build && next export",
+    // "build:development": "env-cmd -f .env.development next build && next export",
+    // "dev:static": "serve ./out",
+    // 

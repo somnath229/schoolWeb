@@ -131,7 +131,7 @@ const foot = {
   Mobile_Num: "98506 72949, 922440656",
   email: "email: ",
   email_Address: "info@shalominternationalschool.com",
-  Copyrights: "© Copyrights 2022 | Designed by Imran Shaikh",
+  Copyrights: "© Copyrights 2022 | Developed by Somnath Dubey",
   About: "About Us |",
   Contact: "Contact Us",
   Insta: "Instagram",

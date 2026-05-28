@@ -11,6 +11,6 @@ export default function App({ Component, pageProps }) {
    <Navbar/>
    <Details/>
    <Component {...pageProps} />
-   <Footer/>
+   <Footer/> 
   </>
 } 

@@ -39,8 +39,7 @@ const Carousel = () => {
           fontSize: "2rem",
           lineHeight: "30px",
           letterSpacing: "-0.15px",
-        }}
-      >
+        }}>
         {carouselUtils.Club_Activities}
       </Typography>
       <Splide
@@ -49,8 +48,8 @@ const Carousel = () => {
         data-splide-interval="1000"
         // data-splide='{"type":"loop","perPage":3}'
       >
-        {slideUtils.map((slide) => (
-          <SplideSlide>
+        {slideUtils.map((slide, index) => (
+          <SplideSlide key={index}>
             <Card sx={{ maxWidth: 300 }}>
               <CardActionArea sx={{ height: "100%" }}>
                 <CardMedia
@@ -69,8 +68,7 @@ const Carousel = () => {
                       fontSize: "1.2rem",
                       lineHeight: "30px",
                       letterSpacing: "-0.15px",
-                    }}
-                  >
+                    }}>
                     {slide["name"]}
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
